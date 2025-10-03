@@ -88,6 +88,11 @@
                 padding: 0.5rem 1rem;
             }
         }
+        
+        /* Reduce spacing between project bullet points */
+        .publications .author ul li {
+            margin-bottom: 0.25rem;
+        }
     </style>
     <script src="/assets/js/theme.js?2ed62375d27d1acd85fb25a8d933282f"></script>
 </head>
@@ -167,17 +172,17 @@
                     <li>Trustworthy AI
                         <ul>
                             <li>Explainable AI (XAI)</li>
-                            <li>Uncertainty Quantification (UQ)
+                            <!-- <li>Uncertainty Quantification (UQ)
                                 <ul>
                                     <li>Conformal Prediction (CP)</li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                 </ul>
             </li>
             <li>Machine Learning &amp; Pattern Recognition
-                <ul>
+                <!-- <ul>
                     <li>Efficient Machine Learning (ML) &amp; Deep Learning (DL)
                         <ul>
                             <li>Kolmogorov Arnold Networks (KAN)</li>
@@ -197,7 +202,7 @@
                             <li>Human-in-the-loop RL</li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
             </li>
             <li>Computer Vision
                 <ul>
@@ -225,7 +230,7 @@
         </ul>
         <p><br></p>
         <h2 id="research-experiences">Research Experiences</h2>
-        <div class="row mt-3">
+        <!-- <div class="row mt-3">
             <div class="col-sm mt-3 mt-md-0">
                 <figure>
                     <picture>
@@ -250,8 +255,8 @@
                     </picture>
                 </figure>
             </div>
-        </div>
-        <p><br></p>
+        </div> 
+        <p><br></p>-->
         <table>
             <thead>
                 <tr>
@@ -353,6 +358,286 @@
             </tbody>
         </table>
         <p><br></p>
+        <h2 id="research-projects">Research Projects</h2>
+        <div class="publications">
+            <ol class="bibliography">
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">NLP</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/sentiment_trends_over_time.png 480w,/assets/img/projects/sentiment_trends_over_time.png 800w,/assets/img/projects/sentiment_trends_over_time.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/sentiment_trends_over_time.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="sentiment.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="sentiment-analysis-project" class="col col-sm-9">
+                            <div class="title">Sentiment Analysis on Social Media Data</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Analyze social media posts to classify sentiment (positive, negative, neutral) using transformer models</li>
+                                    <li>Implemented custom tokenization and feature extraction pipelines for multilingual text processing</li>
+                                    <li>Deployed interactive dashboard for real-time sentiment analysis with visualization of trends</li>
+                                    <li>Achieved high F1-scores with strong generalization across diverse topics and domains</li>
+                                    <li><em>Tools/Technology:</em> Python, Hugging Face Transformers, spaCy, NLTK, BERT, RoBERTa</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/jocelyndumlao/telegram-channels-related-to-cryptocurrencies" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Sentiment_Analysis_on_Social_Media_Data" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://sentiment-a.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">ML</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/anomaly_detection.png 480w,/assets/img/projects/anomaly_detection.png 800w,/assets/img/projects/anomaly_detection.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/anomaly_detection.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="anomaly.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="anomaly-detection-project" class="col col-sm-9">
+                            <div class="title">Anomaly Detection in Network Traffic</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Detect anomalies in network traffic for cybersecurity, performance monitoring, and compliance</li>
+                                    <li>Isolation Forest (unsupervised ML) with temporal feature engineering for pattern recognition</li>
+                                    <li>Developed automated alert system with configurable thresholds and notification mechanisms</li>
+                                    <li>Accurate detection of unusual traffic patterns with low false positives and real-time inference capabilities</li>
+                                    <li><em>Tools/Technology:</em> Python, Scikit-learn, Pandas, Streamlit, Plotly</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/boltzmannbrain/nab/data?select=realKnownCause" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Anomaly_Detection_in_Network_Traffic" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://anomaly-d.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">Deep Learning</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/movie_rating.png 480w,/assets/img/projects/movie_rating.png 800w,/assets/img/projects/movie_rating.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/movie_rating.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="flower.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="flower-classification-project" class="col col-sm-9">
+                            <div class="title">Bangladeshi Flower Image Classification using Deep Learning</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Deep learning–powered web app for classifying 13 types of Bangladeshi flowers</li>
+                                    <li>Transfer learning with MobileNetV2 (fine-tuned last 50 layers) on custom curated dataset</li>
+                                    <li>Advanced data augmentation pipeline (rotation, shift, shear, zoom, flip) to improve model robustness</li>
+                                    <li>Achieved 99.87% validation accuracy with real-time classification and confidence scores via Streamlit app</li>
+                                    <li><em>Tools/Technology:</em> Python, TensorFlow/Keras, Streamlit, OpenCV, PIL, NumPy, Pandas</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/jocelyndumlao/colored-flowers-in-bangladesh/data" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Image_Classification" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://flower-image-classify.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">ML</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/movie_rating.png 480w,/assets/img/projects/movie_rating.png 800w,/assets/img/projects/movie_rating.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/movie_rating.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="movie.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="movie-recommendation-project" class="col col-sm-9">
+                            <div class="title">Movie Recommendation System</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Comprehensive movie recommendation system with content-based and collaborative filtering (KNN, SVD)</li>
+                                    <li>Implemented hybrid approach combining multiple algorithms with weighted averaging for robust recommendations</li>
+                                    <li>Built interactive Streamlit web application deployed on cloud for real-time movie suggestions</li>
+                                    <li>Achieved RMSE of 0.454 with SVD model, 58% improvement over baseline KNN approach</li>
+                                    <li><em>Tools/Technology:</em> Python, Streamlit, Scikit-learn, Pandas, NumPy, TruncatedSVD</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/jocelyndumlao/bengali-movie-dataset" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Movie_Recommendation_System" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://movie-ai1.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">Data Science</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/energy_consumption_by_source.png 480w,/assets/img/projects/energy_consumption_by_source.png 800w,/assets/img/projects/energy_consumption_by_source.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/energy_consumption_by_source.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="energy.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="energy-consumption-project" class="col col-sm-9">
+                            <div class="title">Energy Consumption Analysis</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Analyzed global energy consumption patterns using advanced regression models to predict future energy usage</li>
+                                    <li>Created interactive visualizations to illustrate energy usage trends across different regions and time periods</li>
+                                    <li>Implemented Streamlit web application for user-friendly data exploration and prediction interface</li>
+                                    <li>Performed comprehensive data cleaning, normalization, and feature engineering for accurate model inputs</li>
+                                    <li><em>Tools/Technology:</em> Python, Streamlit, Scikit-learn, Matplotlib, Pandas, NumPy</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Energy_Consumption_Analysis" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://energy-con.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">Time Series</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/sales_forecast_vs_actual.png 480w,/assets/img/projects/sales_forecast_vs_actual.png 800w,/assets/img/projects/sales_forecast_vs_actual.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/sales_forecast_vs_actual.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="sales.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="sales-forecasting-project" class="col col-sm-9">
+                            <div class="title">Sales Forecasting</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Developed sales forecasting solution using ML and DL techniques to predict future sales from historical data</li>
+                                    <li>Implemented time series analysis and LSTM networks to capture complex temporal dependencies and seasonality</li>
+                                    <li>Designed interactive dashboard for visualizing sales forecasts, trends, and performance metrics</li>
+                                    <li>Conducted feature selection and engineering to assist businesses with planning and inventory management</li>
+                                    <li><em>Tools/Technology:</em> Python, TensorFlow/Keras, Scikit-learn, Pandas, Matplotlib, LSTM</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/tanayatipre/store-sales-forecasting-dataset/data?select=stores_sales_forecasting.csv" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Sales_Forecasting" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://sales-forecasting1.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">ML</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/customer_churn.png 480w,/assets/img/projects/customer_churn.png 800w,/assets/img/projects/customer_churn.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/customer_churn.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="churn.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="customer-churn-project" class="col col-sm-9">
+                            <div class="title">Customer Churn Predictor</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Built predictive models to identify customers at risk of churning using classification algorithms</li>
+                                    <li>Implemented feature engineering and selection techniques to identify key churn indicators and patterns</li>
+                                    <li>Developed interactive web interface for real-time churn risk assessment and customer insights</li>
+                                    <li>Evaluated multiple ML algorithms with cross-validation to optimize prediction accuracy and business value</li>
+                                    <li><em>Tools/Technology:</em> Python, Scikit-learn, Pandas, Streamlit, Matplotlib, Seaborn</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/dileep070/logisticregression-telecomcustomer-churmprediction/data" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Customer_Churn_Predictor" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://customer--churn-predictor.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">Regression</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/average_house_price.png 480w,/assets/img/projects/average_house_price.png 800w,/assets/img/projects/average_house_price.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/average_house_price.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="house.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="house-price-project" class="col col-sm-9">
+                            <div class="title">House Price Indicator</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Created ML model to predict house prices based on location, size, bedrooms, and amenities features</li>
+                                    <li>Performed extensive data visualization to identify key factors influencing property values and market trends</li>
+                                    <li>Implemented data normalization, scaling, and feature engineering techniques to improve prediction accuracy</li>
+                                    <li>Developed user-friendly interface using Gradio and Streamlit for real-time price estimation and deployment</li>
+                                    <li><em>Tools/Technology:</em> Python, Gradio, Streamlit, Scikit-learn, Pandas, Matplotlib</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/code/kabure/predicting-house-prices-xgb-rf-bagging-reg-pipe/input" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/House_Price_Indicator" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://house-price-estimator.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col col-sm-3 abbr">
+                            <abbr class="badge rounded w-100">ML</abbr>
+                            <figure>
+                                <picture>
+                                    <source class="responsive-img-srcset" srcset="/assets/img/projects/insurance.png 480w,/assets/img/projects/insurance.png 800w,/assets/img/projects/insurance.png 1400w," sizes="500px" type="image/webp"></source>
+                                    <img src="/assets/img/projects/insurance.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="insurance.png" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div id="insurance-charge-project" class="col col-sm-9">
+                            <div class="title">Insurance Charge Predictor</div>
+                            <div class="author">
+                                <ul>
+                                    <li>Developed predictive model to estimate medical insurance charges based on age, BMI, smoking habits, and region</li>
+                                    <li>Implemented data preprocessing including encoding categorical variables and handling missing data effectively</li>
+                                    <li>Built Flask web application with interactive UI for real-time insurance cost estimation and predictions</li>
+                                    <li>Evaluated model performance using MAE and R-squared metrics; deployed on Render for public access</li>
+                                    <li><em>Tools/Technology:</em> Python, Flask, Scikit-learn, Pandas, NumPy, Render</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://www.kaggle.com/datasets/thedevastator/prediction-of-insurance-charges-using-age-gender/data" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Datasets</a>
+                                <a href="https://github.com/bipulhstu/Insurance_Charge_Predictor" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">GitHub</a>
+                                <a href="https://insurance-3u7q.onrender.com" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <p><br></p>
+
+
+        
     </div>
     <footer class="fixed-bottom">
         <div class="container mt-0">
