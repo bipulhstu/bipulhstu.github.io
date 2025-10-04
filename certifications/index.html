@@ -88,6 +88,49 @@
                 padding: 0.5rem 1rem;
             }
         }
+        /* Modal text color matching */
+        
+        #certificatePageModal .modal-content {
+            background-color: var(--global-bg-color, #ffffff);
+            color: var(--global-text-color, #000000);
+        }
+        
+        #certificatePageModal .modal-header {
+            border-bottom-color: var(--global-divider-color, #dee2e6);
+        }
+        
+        #certificatePageModalBody {
+            color: var(--global-text-color, inherit);
+            background-color: var(--global-bg-color, transparent);
+        }
+        
+        #certificatePageModalBody p,
+        #certificatePageModalBody .clearfix p,
+        #certificatePageModalBody .mb-4 p {
+            color: var(--global-text-color, inherit);
+        }
+        
+        #certificatePageModalBody h3,
+        #certificatePageModalBody .post-title {
+            color: var(--global-text-color, inherit);
+        }
+        
+        #certificatePageModalBody b,
+        #certificatePageModalBody strong {
+            color: var(--global-text-color, inherit);
+        }
+        
+        #certificatePageModalBody .text-muted {
+            opacity: 0.7;
+        }
+        
+        #certificatePageModalBody a {
+            color: var(--global-theme-color, #007bff);
+        }
+        
+        #certificatePageModalBody hr {
+            border-color: var(--global-divider-color, rgba(0, 0, 0, 0.1));
+        }
     </style>
     <script src="/assets/js/theme.js?2ed62375d27d1acd85fb25a8d933282f"></script>
 </head>
@@ -206,6 +249,31 @@
             </div>
         </div>
     </div>
+
+    <!-- Certificate Page Modal -->
+    <div class="modal fade" id="certificatePageModal" tabindex="-1" role="dialog" aria-labelledby="certificatePageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document" style="max-width: 90%; margin: 1.75rem auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="certificatePageModalLabel">Certificates</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="certificatePageModalBody" style="max-height: 80vh; overflow-y: auto;">
+                    <div class="text-center py-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <p class="mt-3">Loading certificates...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden iframe for loading certificate pages -->
+    <iframe id="certificateLoaderIframe" style="display: none;"></iframe>
 
     <!-- Footer -->
     <footer class="fixed-bottom">
@@ -614,6 +682,11 @@
                                         (cert.verification_link.includes('.html') ? 'View All Certificates' : 'Certificate') :
                                         'Certificate';
 
+                                    // Add special class for internal HTML links
+                                    const linkClass = isInternalLink && cert.verification_link.includes('.html') ?
+                                        'text-primary certificate-page-link' :
+                                        (isInternalLink ? 'text-primary' : '');
+
                                     html += `
                         <hr>
                         <div class="mb-3">
@@ -632,7 +705,7 @@
                                    Subject: ${cert.subject}<br>
                                    Level: ${cert.level}<br>
                                    Associated skills: ${cert.associated_skills}<br>
-                                   Verification: <a href="${cert.verification_link}" ${linkAttributes}>${linkText}</a></p>
+                                   Verification: <a href="${cert.verification_link}" class="${linkClass}" ${isInternalLink && cert.verification_link.includes('.html') ? '' : linkAttributes}>${linkText}</a></p>
                             </div>
                         </div>
                     `;
@@ -660,6 +733,159 @@
             // Add cursor pointer to certificate images
             $(document).on('mouseenter', '.profile img', function() {
                 $(this).css('cursor', 'pointer');
+            });
+
+            // Flag to track if modal is temporarily hidden for image viewing
+            var isTemporarilyHidden = false;
+            
+            // Handle "View All Certificates" link clicks
+            $(document).on('click', 'a.certificate-page-link', function(e) {
+                e.preventDefault();
+                
+                var url = $(this).attr('href');
+                var linkText = $(this).text();
+                
+                // Set modal title
+                $('#certificatePageModalLabel').text(linkText);
+                
+                // Show loading state
+                $('#certificatePageModalBody').html(`
+                    <div class="text-center py-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <p class="mt-3">Loading certificates...</p>
+                    </div>
+                `);
+                
+                // Reset flag
+                isTemporarilyHidden = false;
+                
+                // Show the modal
+                $('#certificatePageModal').modal('show');
+                
+                // Load the page in hidden iframe
+                var iframe = document.getElementById('certificateLoaderIframe');
+                
+                // Set up load handler
+                iframe.onload = function() {
+                    try {
+                        // Wait a bit for JavaScript to execute
+                        setTimeout(function() {
+                            try {
+                                var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                                
+                                // Extract the certificate container content
+                                var contentSelectors = [
+                                    '#dataManipulationCertificatesContainer',
+                                    '#pythonFundamentalsCertificatesContainer',
+                                    '#javaFundamentalsCertificatesContainer',
+                                    '#aiFundamentalsCertificatesContainer',
+                                    '#buildApisInPythonCertificatesContainer',
+                                    '#mlsCertificatesContainer',
+                                    '#adsCertificatesContainer',
+                                    '#dsCertificatesContainer'
+                                ];
+                                
+                                var extractedContent = null;
+                                var pageTitle = '';
+                                
+                                // Try to find the certificate container
+                                for (var i = 0; i < contentSelectors.length; i++) {
+                                    var container = iframeDoc.querySelector(contentSelectors[i]);
+                                    if (container && container.innerHTML.trim()) {
+                                        extractedContent = container.innerHTML;
+                                        break;
+                                    }
+                                }
+                                
+                                // Also get the page title/description if available
+                                var titleElement = iframeDoc.querySelector('.post-title');
+                                var descElement = iframeDoc.querySelector('.post-description');
+                                
+                                if (titleElement) {
+                                    pageTitle = '<h3 class="mb-3">' + titleElement.innerHTML + '</h3>';
+                                }
+                                if (descElement) {
+                                    pageTitle += '<p class="text-muted mb-4">' + descElement.innerHTML + '</p>';
+                                }
+                                
+                                if (extractedContent) {
+                                    // Display the extracted content with proper styling
+                                    var contentHtml = pageTitle + '<div class="projects">' + extractedContent + '</div>';
+                                    $('#certificatePageModalBody').html(contentHtml);
+                                    
+                                    // Copy theme class from body to modal for color consistency
+                                    var bodyClasses = $('body').attr('class') || '';
+                                    if (bodyClasses) {
+                                        $('#certificatePageModalBody').attr('data-theme', bodyClasses);
+                                    }
+                                    
+                                    // Re-attach click events for certificate images
+                                    $('#certificatePageModalBody').find('.profile img').on('click', function() {
+                                        var imageSrc = $(this).attr('src');
+                                        var certificateTitle = $(this).attr('alt');
+                                        
+                                        // Mark as temporarily hidden
+                                        isTemporarilyHidden = true;
+                                        
+                                        // Hide the page modal temporarily
+                                        $('#certificatePageModal').modal('hide');
+                                        
+                                        // Set and show image modal
+                                        $('#certificateModalImage').attr('src', imageSrc);
+                                        $('#certificateModalLabel').text(certificateTitle);
+                                        $('#certificateModal').modal('show');
+                                        
+                                        // Re-show page modal after image modal is closed
+                                        $('#certificateModal').one('hidden.bs.modal', function() {
+                                            $('#certificatePageModal').modal('show');
+                                            // Reset flag after re-showing
+                                            isTemporarilyHidden = false;
+                                        });
+                                    });
+                                } else {
+                                    $('#certificatePageModalBody').html(`
+                                        <div class="alert alert-warning" role="alert">
+                                            <h5>Content Not Found</h5>
+                                            <p>Unable to extract certificate content from the page.</p>
+                                            <a href="${url}" class="btn btn-primary" target="_blank">Open in New Tab</a>
+                                        </div>
+                                    `);
+                                }
+                            } catch (err) {
+                                console.error('Error extracting content:', err);
+                                $('#certificatePageModalBody').html(`
+                                    <div class="alert alert-danger" role="alert">
+                                        <h5>Error Loading Certificates</h5>
+                                        <p>Unable to load the certificate page content.</p>
+                                        <a href="${url}" class="btn btn-primary" target="_blank">Open in New Tab</a>
+                                    </div>
+                                `);
+                            }
+                        }, 500); // Wait 500ms for JavaScript to execute
+                    } catch (err) {
+                        console.error('Error accessing iframe:', err);
+                        $('#certificatePageModalBody').html(`
+                            <div class="alert alert-danger" role="alert">
+                                <h5>Error Loading Certificates</h5>
+                                <p>Unable to access the certificate page content.</p>
+                                <a href="${url}" class="btn btn-primary" target="_blank">Open in New Tab</a>
+                            </div>
+                        `);
+                    }
+                };
+                
+                // Load the page
+                iframe.src = url;
+            });
+            
+            // Clear iframe when modal is actually closed (not temporarily hidden)
+            $('#certificatePageModal').on('hidden.bs.modal', function() {
+                // Only clear if not temporarily hidden for image viewing
+                if (!isTemporarilyHidden) {
+                    document.getElementById('certificateLoaderIframe').src = 'about:blank';
+                }
             });
         });
     </script>
