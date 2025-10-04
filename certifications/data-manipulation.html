@@ -263,6 +263,16 @@
     <script>
         // Data Manipulation Certificates Model
         const dataManipulationCertificatesModel = [{
+            id: 0,
+            name: "Data Manipulation with Pandas - CPE Certificate",
+            image: "/assets/img/certificates/data_manipulation_with_pandas_cpe_certificate.jpg",
+            institution: "DataCamp",
+            subject: "Data Science",
+            level: "Beginner",
+            associated_skills: "Dataframe Transformation, Data Aggregation, Data Slicing, Data Indexing, Data Visualization",
+            verification_link: "https://www.datacamp.com/skill-verification/DMP0018373920067",
+            duration: "2.8 CPE"
+        },{
             id: 1,
             name: "Data Manipulation with Pandas",
             image: "/assets/img/certificates/data_manipulation_with_pandas.jpg",
@@ -275,12 +285,12 @@
         }, {
             id: 2,
             name: "Reshaping Data with Pandas",
-            image: "",
+            image: "/assets/img/certificates/reshaping_data_with_pandas.jpg",
             institution: "DataCamp",
             subject: "Data Science",
             level: "Beginner",
             associated_skills: "Data Reshaping, Wide To Long Format Conversion, Stacking, Unstacking, Multi Index Dataframes",
-            verification_link: "#",
+            verification_link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/0d9b0e01a4924e5c538454215aa1153c419b9070",
             duration: "4 hours"
         }, {
             id: 3,
@@ -305,12 +315,12 @@
         }, {
             id: 6,
             name: "Data Manipulation Professional Certificate",
-            image: "",
+            image: "/assets/img/certificates/data_manipulation_in_python.jpg",
             institution: "DataCamp",
             subject: "Data Science",
             level: "Professional",
             associated_skills: "Complete Data Manipulation Workflow, Advanced Techniques, Performance Optimization",
-            verification_link: "#",
+            verification_link: "https://www.datacamp.com/completed/statement-of-accomplishment/track/da69bd3d3c3977ef1c0bcb6a2592514332dfe45e",
             duration: "Professional Certificate"
         }];
 
@@ -330,7 +340,7 @@
                         <div class="profile float-right">
                             <figure>
                                 <picture>
-                                    <img src="${cert.image}" class="img-fluid z-depth-1 rounded" style="width: 150px; height: auto; cursor: pointer;" alt="${cert.name}">
+                                    <img src="${cert.image}" class="img-fluid z-depth-1 rounded" style="width: 100%; height: auto; cursor: pointer;" alt="${cert.name}">
                                 </picture>
                             </figure>
                         </div>
