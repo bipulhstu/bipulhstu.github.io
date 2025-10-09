@@ -87,6 +87,17 @@
                 padding: 0.5rem 1rem;
             }
         }
+        /* Theme-aware text color for MSc heading */
+        
+        .theme-text {
+            color: #212529;
+            /* Dark color for light mode */
+        }
+        
+        html[data-theme="dark"] .theme-text {
+            color: #ffffff;
+            /* White color for dark mode */
+        }
     </style>
     <script src="/assets/js/theme.js?2ed62375d27d1acd85fb25a8d933282f"></script>
 </head>
@@ -170,7 +181,7 @@
 
                         <div class="mt-4">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="text-success mb-0">MSc in CSE Semester 1 Courses with Achieved GPA</h5>
+                                <h5 class="theme-text mb-0">MSc in CSE Semester 1 Courses with Achieved GPA</h5>
                                 <a href="https://drive.google.com/file/d/your-transcript-link" target="_blank" rel="external nofollow noopener" class="text-primary">
                                     <i class="fa-solid fa-file-alt"></i> Transcripts
                                 </a>
@@ -181,34 +192,34 @@
                                         <tr>
                                             <th scope="col">Course Code</th>
                                             <th scope="col">Course Title</th>
-                                            <th scope="col" class="text-center">Achieved GPA</th>
+                                            <th scope="col" class="text-right">Achieved GPA</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><strong>CSE 507</strong></td>
                                             <td>Advanced Artifical Intelligence</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.75/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.75/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CSE 523</strong></td>
                                             <td>Advanced Synthetic Pattern Recognition</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.75/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.75/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CSE 501</strong></td>
                                             <td>Computer Arithmetic</td>
-                                            <td class="text-center"><span class="badge badge-dark">4.00/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">4.00/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CSE 505</strong></td>
                                             <td>Research Methodology</td>
-                                            <td class="text-center"><span class="badge badge-dark">4.00/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">4.00/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CSE 503</strong></td>
                                             <td>Advanced Database Systems</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.75/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.75/4.00</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -217,7 +228,7 @@
 
                         <div class="mt-3">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="text-success mb-0">B.Sc. in EEE Courses with Achieved GPA</h5>
+                                <h5 class="theme-text mb-0">B.Sc. in EEE Courses with Achieved GPA</h5>
                                 <a href="https://drive.google.com/file/d/1-jwXHCTUTpoukCz29jHBGy8Uusk5-teB/view?usp=sharing" target="_blank" rel="external nofollow noopener" class="text-primary">
                                     <i class="fa-solid fa-file-alt"></i> Transcripts
                                 </a>
@@ -228,84 +239,84 @@
                                         <tr>
                                             <th scope="col">Course Code</th>
                                             <th scope="col">Course Title</th>
-                                            <th scope="col" class="text-center">Achieved GPA</th>
+                                            <th scope="col" class="text-right">Achieved GPA</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><strong>MAP 213</strong></td>
                                             <td>Linear Algebra</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.00/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.00/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>ECE 215</strong></td>
                                             <td>Signal and Systems</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.75/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.75/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>STT 223</strong></td>
                                             <td>Basic Statistics and Probability Theory</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.75/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.75/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>EEE 105</strong></td>
                                             <td>Electrical Circuit - I</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.50/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.50/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>STT 224</strong></td>
                                             <td>Basic Statistics and Probability Practical</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.50/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.50/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>EEE 107</strong></td>
                                             <td>Electrical Circuit – II</td>
-                                            <td class="text-center"><span class="badge badge-dark">2.75/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">2.75/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>MAP 129</strong></td>
                                             <td>Calculus – I</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.25/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.25/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>EEE 309</strong></td>
                                             <td>Digital Electronics Theory</td>
-                                            <td class="text-center"><span class="badge badge-dark">2.50/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">2.50/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>MAP 131</strong></td>
                                             <td>Calculus – II</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.00/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.00/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>EEE 310</strong></td>
                                             <td>Digital Electronics Practical</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.25/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.25/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CSE 117</strong></td>
                                             <td>Computer Programming</td>
-                                            <td class="text-center"><span class="badge badge-dark">2.50/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">2.50/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>ECE 353</strong></td>
                                             <td>Digital Signal Processing</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.00/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.00/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>EEE 407</strong></td>
                                             <td>Microcontroller Based System Design</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.00/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.00/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>ECE 351</strong></td>
                                             <td>Communication Theory</td>
-                                            <td class="text-center"><span class="badge badge-dark">2.50/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">2.50/4.00</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>ECE 491</strong></td>
                                             <td>Mobile Cellular Communication</td>
-                                            <td class="text-center"><span class="badge badge-dark">3.50/4.00</span></td>
+                                            <td class="text-right"><span class="badge badge-dark">3.50/4.00</span></td>
                                         </tr>
                                     </tbody>
                                 </table>

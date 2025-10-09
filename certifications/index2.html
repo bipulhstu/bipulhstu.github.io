@@ -137,7 +137,7 @@
             display: flex;
             width: 100%;
             min-height: 150px;
-            margin-bottom: 1rem;
+            margin-bottom: .2rem;
         }
         
         .certificate-details {
@@ -179,6 +179,8 @@
         
         .certificate-toggle-icon {
             transition: transform 0.3s ease;
+            font-size: 1.2em;
+            color: #6c757d;
         }
         
         .certificate-toggle-icon.rotated {
@@ -190,7 +192,7 @@
             padding: 15px 0;
         }
         
-        .certificate-expanded .certificate-details-content {
+        .certificate-item.certificate-expanded .certificate-details-content {
             display: block;
         }
     </style>
@@ -495,7 +497,7 @@
                             id: 7,
                             name: "Python 101 for Data Science",
                             image: "/assets/img/certificates/ibm_python_py010en_certificate.jpg",
-                            institution: "IBM (CognitiveClass.AI)",
+                            institution: "IBM",
                             subject: "Data Science",
                             level: "Introductory",
                             associated_skills: "Python Programming, Data Science Basics, Jupyter Notebooks, Python Libraries",
@@ -845,10 +847,14 @@
 
                                     html += `
                         <hr>
-                        <div class="mb-3">
-                            <div class="certificate-flex-container">
+                        <div class="mb-3 certificate-item" data-certificate-id="${cert.id}">
+                            <div class="certificate-header">
+                                <p class="mb-2" style="font-size: 1.2em;"><b>${cert.institution}: ${cert.name}</b></p>
+                                <span class="certificate-toggle-icon">▼</span>
+                            </div>
+                            <div class="certificate-details-content">
+                                <div class="certificate-flex-container">
                                     <div class="certificate-details">
-                                        <p class="mb-2" style="font-size: 1.2em;"><b>${cert.name}</b></p>
                                         <div>
                                             <p><strong>Provider:</strong> ${cert.institution}<br>
                                             <strong>Associated skills:</strong> ${cert.associated_skills}<br>
@@ -867,6 +873,7 @@
                                         ` : '<div class="text-center certificate-image-placeholder"><p class="small">No Image</p></div>'}
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     `;
                 });
@@ -878,7 +885,10 @@
             renderCertificates();
 
             // Add click event to certificate images
-            $(document).on('click', '.profile img', function() {
+            $(document).on('click', '.profile img', function(e) {
+                // Prevent event from bubbling up to parent elements
+                e.stopPropagation();
+                
                 var imageSrc = $(this).attr('src');
                 var certificateTitle = $(this).attr('alt');
 
@@ -893,6 +903,23 @@
             // Add cursor pointer to certificate images
             $(document).on('mouseenter', '.profile img', function() {
                 $(this).css('cursor', 'pointer');
+            });
+
+            // Prevent links from expanding the certificate
+            $(document).on('click', '.certificate-details-content a', function(e) {
+                e.stopPropagation();
+            });
+
+            // Handle certificate expand/collapse
+            $(document).on('click', '.certificate-header', function(e) {
+                // Prevent event from bubbling up to parent elements
+                e.stopPropagation();
+                
+                var container = $(this).closest('.certificate-item');
+                var icon = $(this).find('.certificate-toggle-icon');
+                
+                container.toggleClass('certificate-expanded');
+                icon.toggleClass('rotated');
             });
 
             // Flag to track if modal is temporarily hidden for image viewing
