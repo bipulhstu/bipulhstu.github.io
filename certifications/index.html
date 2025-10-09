@@ -131,6 +131,43 @@
         #certificatePageModalBody hr {
             border-color: var(--global-divider-color, rgba(0, 0, 0, 0.1));
         }
+        /* Certificate layout styles */
+        
+        .certificate-flex-container {
+            display: flex;
+            width: 100%;
+            min-height: 150px;
+            margin-bottom: 1rem;
+        }
+        
+        .certificate-details {
+            flex: 5;
+            padding-right: 15px;
+        }
+        
+        .certificate-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+        }
+        
+        .certificate-image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .certificate-image-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
     </style>
     <script src="/assets/js/theme.js?2ed62375d27d1acd85fb25a8d933282f"></script>
 </head>
@@ -690,23 +727,27 @@
                                     html += `
                         <hr>
                         <div class="mb-3">
-                            <p class="mb-2" style="font-size: 1.2em;"><b>${cert.name}</b></p>
-                            ${cert.image ? `
-                            <div class="profile float-right">
-                                <figure>
-                                    <picture>
-                                        <img src="${cert.image}" class="img-fluid z-depth-1 rounded" style="width: 100%; height: auto; cursor: pointer;" alt="${cert.name}">
-                                    </picture>
-                                </figure>
-                            </div>
-                            ` : ''}
-                            <div class="clearfix">
-                                <p>Institution: ${cert.institution}<br>
-                                   Subject: ${cert.subject}<br>
-                                   Level: ${cert.level}<br>
-                                   Associated skills: ${cert.associated_skills}<br>
-                                   Verification: <a href="${cert.verification_link}" class="${linkClass}" ${isInternalLink && cert.verification_link.includes('.html') ? '' : linkAttributes}>${linkText}</a></p>
-                            </div>
+                            <div class="certificate-flex-container">
+                                    <div class="certificate-details">
+                                        <p class="mb-2" style="font-size: 1.2em;"><b>${cert.name}</b></p>
+                                        <div>
+                                            <p><strong>Provider:</strong> ${cert.institution}<br>
+                                            <strong>Associated skills:</strong> ${cert.associated_skills}<br>
+                                            <strong>Verification:</strong> <a href="${cert.verification_link}" class="${linkClass}" ${isInternalLink && cert.verification_link.includes('.html') ? '' : linkAttributes}>${linkText}</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="certificate-image">
+                                        ${cert.image ? `
+                                        <div class="profile text-center certificate-image-container">
+                                            <figure style="margin: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                                                <picture>
+                                                    <img src="${cert.image}" class="img-fluid z-depth-1 rounded" style="max-width: 100%; max-height: 100%; width: auto; height: auto; cursor: pointer;" alt="${cert.name}">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                        ` : '<div class="text-center certificate-image-placeholder"><p class="small">No Image</p></div>'}
+                                    </div>
+                                </div>
                         </div>
                     `;
                 });
