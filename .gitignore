@@ -1,0 +1,10 @@
+_site/
+
+.DS_Store
+vendor
+*.lock
+*-cache
+.bundle
+*/bibtex/*
+*/ris/*
+venv

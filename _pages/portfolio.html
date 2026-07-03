@@ -1,0 +1,139 @@
+---
+layout: archive
+title: "Projects"
+permalink: /portfolio/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>A selection of my machine learning, deep learning, and data science projects. Click any card to view the full details.</p>
+
+<div class="pf-grid">
+  {% for post in site.portfolio %}
+    <button type="button" class="pf-card" data-pf-target="pf-modal-{{ forloop.index }}">
+      {% if post.image %}
+        <div class="pf-card__media"><img src="{{ base_path }}{{ post.image }}" alt="{{ post.title }}" loading="lazy"></div>
+      {% endif %}
+      <div class="pf-card__body">
+        {% if post.category %}<span class="pf-card__tag">{{ post.category }}</span>{% endif %}
+        <h3 class="pf-card__title">{{ post.title }}</h3>
+        <p class="pf-card__excerpt">{{ post.excerpt }}</p>
+        <span class="pf-card__more">View details →</span>
+      </div>
+    </button>
+  {% endfor %}
+</div>
+
+{% for post in site.portfolio %}
+  <div class="pf-modal" id="pf-modal-{{ forloop.index }}" role="dialog" aria-modal="true" aria-labelledby="pf-modal-title-{{ forloop.index }}" hidden>
+    <div class="pf-modal__overlay" data-pf-close></div>
+    <div class="pf-modal__dialog" role="document">
+      <button type="button" class="pf-modal__close" data-pf-close aria-label="Close">&times;</button>
+      {% if post.image %}<img class="pf-modal__image" src="{{ base_path }}{{ post.image }}" alt="{{ post.title }}">{% endif %}
+      {% if post.category %}<span class="pf-card__tag">{{ post.category }}</span>{% endif %}
+      <h2 class="pf-modal__title" id="pf-modal-title-{{ forloop.index }}">{{ post.title }}</h2>
+      <div class="pf-modal__content">
+        {{ post.content }}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+<style>
+.pf-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:1.25rem;
+  margin:1.5rem 0;
+}
+.pf-card{
+  display:flex;flex-direction:column;text-align:left;
+  padding:0;margin:0;cursor:pointer;overflow:hidden;
+  background:var(--global-bg-color);
+  border:1px solid var(--global-border-color);
+  border-radius:10px;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  font-family:inherit;color:inherit;
+}
+.pf-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 24px rgba(0,0,0,.18);
+  border-color:var(--global-base-color);
+}
+.pf-card__media{width:100%;aspect-ratio:16/10;overflow:hidden;background:var(--global-border-color);}
+.pf-card__media img{width:100%;height:100%;object-fit:cover;display:block;}
+.pf-card__body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;}
+.pf-card__tag{
+  align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.02em;
+  text-transform:uppercase;color:#fff;background:var(--global-base-color);
+  padding:.2rem .55rem;border-radius:999px;
+}
+.pf-card__title{margin:.1rem 0 0;font-size:1.05rem;line-height:1.3;}
+.pf-card__excerpt{margin:0;font-size:.9rem;opacity:.85;}
+.pf-card__more{margin-top:.35rem;font-size:.85rem;font-weight:700;color:var(--global-base-color);}
+
+.pf-modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1.25rem;}
+.pf-modal[hidden]{display:none;}
+.pf-modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(2px);}
+.pf-modal__dialog{
+  position:relative;z-index:1;
+  width:min(860px,96vw);max-height:90vh;overflow-y:auto;
+  background:var(--global-bg-color);color:var(--global-text-color);
+  border:1px solid var(--global-border-color);border-radius:14px;
+  padding:1.75rem 2rem 2rem;
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+.pf-modal__close{
+  position:absolute;top:.6rem;right:.8rem;
+  width:2.2rem;height:2.2rem;line-height:1;
+  font-size:1.8rem;border:0;border-radius:50%;cursor:pointer;
+  background:transparent;color:var(--global-text-color);
+}
+.pf-modal__close:hover{background:var(--global-border-color);}
+.pf-modal__image{width:100%;max-height:360px;object-fit:cover;border-radius:10px;margin-bottom:1rem;}
+.pf-modal__title{margin:.5rem 0 1rem;}
+.pf-modal__content{font-size:.98rem;line-height:1.6;}
+.pf-modal__content a{font-weight:700;}
+body.pf-modal-open{overflow:hidden;}
+</style>
+
+<script>
+(function(){
+  function openModal(m){
+    m.hidden=false;
+    document.body.classList.add('pf-modal-open');
+    // Force every link inside the dialog to open in a new tab
+    m.querySelectorAll('a[href]').forEach(function(a){
+      a.setAttribute('target','_blank');
+      a.setAttribute('rel','noopener noreferrer');
+    });
+    var closeBtn=m.querySelector('.pf-modal__close');
+    if(closeBtn){closeBtn.focus();}
+  }
+  function closeModal(m){
+    m.hidden=true;
+    if(!document.querySelector('.pf-modal:not([hidden])')){
+      document.body.classList.remove('pf-modal-open');
+    }
+  }
+  document.querySelectorAll('.pf-card').forEach(function(card){
+    card.addEventListener('click',function(){
+      var m=document.getElementById(card.getAttribute('data-pf-target'));
+      if(m){openModal(m);}
+    });
+  });
+  document.querySelectorAll('[data-pf-close]').forEach(function(el){
+    el.addEventListener('click',function(){
+      var m=el.closest('.pf-modal');
+      if(m){closeModal(m);}
+    });
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){
+      var open=document.querySelector('.pf-modal:not([hidden])');
+      if(open){closeModal(open);}
+    }
+  });
+})();
+</script>

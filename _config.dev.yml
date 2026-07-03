@@ -1,0 +1,9 @@
+# Local development overrides.
+# Loaded on top of _config.yml only when serving locally, e.g.:
+#   bundle exec jekyll serve --config _config.yml,_config.dev.yml
+#
+# Blanking `url` makes all asset paths root-relative (/assets/...), so the
+# browser loads CSS/JS/images from the LOCAL server instead of the production
+# domain (which still hosts the old site). Do NOT use this config to deploy.
+url: ""
+baseurl: ""
