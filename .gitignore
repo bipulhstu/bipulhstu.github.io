@@ -1,7 +1,7 @@
 _site/
 
 .DS_Store
-vendor
+/vendor
 *.lock
 *-cache
 .bundle
