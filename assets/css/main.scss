@@ -9,14 +9,14 @@
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
+    "libs/breakpoint/breakpoint",
 
     "themes",
     "theme/default",
     "theme/dark",
 
     "include/mixins",
-    "vendor/susy/susy",
+    "libs/susy/susy",
 
     "layout/reset",
     "layout/base",
@@ -37,8 +37,8 @@
     "layout/sidebar",
     "layout/resume",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands",
-    "vendor/magnific-popup/magnific-popup"
+    "libs/font-awesome/fontawesome",
+    "libs/font-awesome/solid",
+    "libs/font-awesome/brands",
+    "libs/magnific-popup/magnific-popup"
 ;
