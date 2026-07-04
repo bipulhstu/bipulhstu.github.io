@@ -11,7 +11,7 @@ Email: bipulhstu [at] gmail [dot] com
 
 Hello! This is **Md. Bipul Islam** — you can call me **Bipul**.
 
-I am currently pursuing my **M.Sc. in Computer Science and Engineering** at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/), Dinajpur, Bangladesh (expected July 2026), working under the supervision of **Dr. Ashis Kumar Mandal**. I have maintained a CGPA of **3.85/4.00** through my second semester.
+I am currently pursuing my **M.Sc. in Computer Science and Engineering** at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Dinajpur, Bangladesh (expected July 2026), working under the supervision of **Dr. Ashis Kumar Mandal**. I have maintained a CGPA of **3.85/4.00** through my second semester.
 
 I earned my **B.Sc. in Electrical and Electronic Engineering** from the same university in December 2019. Driven by a passion for programming, I pursued computer science coursework alongside my electrical engineering studies, building a strong foundation across both domains.
 

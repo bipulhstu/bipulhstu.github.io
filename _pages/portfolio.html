@@ -103,7 +103,7 @@ body.pf-modal-open{overflow:hidden;}
   function openModal(m){
     m.hidden=false;
     document.body.classList.add('pf-modal-open');
-    // Force every link inside the dialog to open in a new tab
+    /* Force every link inside the dialog to open in a new tab */
     m.querySelectorAll('a[href]').forEach(function(a){
       a.setAttribute('target','_blank');
       a.setAttribute('rel','noopener noreferrer');

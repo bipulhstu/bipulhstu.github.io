@@ -202,6 +202,14 @@
     z-index: 100;
   }
 
+  /* When nothing overflows, the greedy-nav hides the dropdown button; only
+     then stretch the nav to full width so items reach the right edge. While
+     items overflow (button visible) the table stays content-width so the
+     greedy JS can still measure overflow and collapse into the hamburger. */
+  button.hidden + .visible-links {
+    width: 100%;
+  }
+
   .visible-links {
     display: table;
 

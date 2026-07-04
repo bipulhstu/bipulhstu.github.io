@@ -4,7 +4,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-For the most up-to-date list, see my [[Google Scholar Profile](https://scholar.google.com/citations?user=PsHZ75wAAAAJ&hl=en), [ResearchGate](https://www.researchgate.net/profile/Md-Bipul-Islam?ev=hdr_xprf), [ORCID](https://orcid.org/0000-0002-1623-359X)].
+For the most up-to-date list, see my [[Google Scholar Profile](https://scholar.google.com/citations?user=PsHZ75wAAAAJ&hl=en){:target="_blank" rel="noopener noreferrer"}, [ResearchGate](https://www.researchgate.net/profile/Md-Bipul-Islam?ev=hdr_xprf){:target="_blank" rel="noopener noreferrer"}, [ORCID](https://orcid.org/0000-0002-1623-359X){:target="_blank" rel="noopener noreferrer"}].
 
 \* indicates authors with equal contribution.
 

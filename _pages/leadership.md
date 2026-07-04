@@ -11,6 +11,15 @@ author_profile: true
   <div class="tl">
     <div class="tl-item">
       <div class="tl-head">
+        <h3 class="tl-title">Public Relations Executive</h3>
+        <span class="tl-badge">Jun 2026 &ndash; Present</span>
+      </div>
+      <p class="tl-org"><i class="fas fa-building-columns"></i> IEEE Computer Society Bangladesh Chapter &mdash; Graduate Student Member Forum (GSMF)</p>
+      <p class="tl-desc">Selected to the 2026 Executive Committee to lead public relations and communications for the Forum — promoting its events, technical activities, and initiatives, developing outreach content, expanding its professional network, and driving community engagement among graduate students and young professionals across universities nationwide.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-head">
         <h3 class="tl-title">Class Representative</h3>
         <span class="tl-badge">2025</span>
       </div>
