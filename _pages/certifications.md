@@ -15,6 +15,18 @@ author_profile: true
   </div>
 </div>
 <div class="cert-grid">
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/ai_for_medical_diagnosis.png" data-cert-caption="AI for Medical Diagnosis" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/AISJCIZMSAWF">
+    <img src="/img/certificates/coursera/ai_for_medical_diagnosis.png" alt="AI for Medical Diagnosis" loading="lazy">
+    <span class="cert-item__caption">AI for Medical Diagnosis</span>
+  </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/supervised_machine_learning.png" data-cert-caption="Supervised Machine Learning: Regression and Classification" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/IVU9O48A4A3Z">
+    <img src="/img/certificates/coursera/supervised_machine_learning.png" alt="Supervised Machine Learning: Regression and Classification" loading="lazy">
+    <span class="cert-item__caption">Supervised Machine Learning: Regression and Classification</span>
+  </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/calculus_for_ml_and_ds.png" data-cert-caption="Calculus for Machine Learning and Data Science" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/X7AN59QKJXIW">
+    <img src="/img/certificates/coursera/calculus_for_ml_and_ds.png" alt="Calculus for Machine Learning and Data Science" loading="lazy">
+    <span class="cert-item__caption">Calculus for Machine Learning and Data Science</span>
+  </button>
   <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/linear_algebra_coursera_certificate.png" data-cert-caption="Linear Algebra for Machine Learning and Data Science" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/7QODJMY2FZHO">
     <img src="/img/certificates/coursera/linear_algebra_coursera_certificate.png" alt="Linear Algebra for Machine Learning and Data Science" loading="lazy">
     <span class="cert-item__caption">Linear Algebra for Machine Learning and Data Science</span>
