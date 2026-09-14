@@ -1,5 +1,6 @@
 ---
 layout: archive
+title: "Leadership & Activities"
 permalink: /leadership/
 author_profile: true
 ---

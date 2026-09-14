@@ -1,62 +1,89 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Md. Bipul Islam",
+    "email": "bipulhstu@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://bipulhstu.github.io",
+    "summary": "M.Sc. Student in Computer Science and Engineering at HSTU. Researching AI in Healthcare, Clinical AI, and Human-Centered AI.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Dinajpur",
+      "countryCode": "BD",
+      "region": "Bangladesh"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=ky5HoS4AAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0005-9923-6201"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "bipulhstu",
+        "url": "https://github.com/bipulhstu"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Elite Research Lab",
+      "position": "Student Researcher",
+      "startDate": "2026-07-01",
+      "endDate": "",
+      "summary": "Conducting research on AI in Healthcare, Clinical AI, and Human-Centered AI."
+    },
+    {
+      "company": "Computer Science Lab, HSTU",
+      "position": "Graduate Research Assistant",
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "summary": "Developing self-supervised contrastive and masked representation learning methods for reliable arrhythmia classification."
+    },
+    {
+      "company": "Walton ICT Lab (R&D Lab), Walton Digi-Tech Industries Ltd",
+      "position": "Research Assistant",
+      "startDate": "2023-03-01",
+      "endDate": "2024-12-31",
+      "summary": "Researched and developed cross-platform mobile and IoT software products."
+    },
+    {
+      "company": "Walton Digi-Tech Industries Ltd",
+      "position": "Software Engineer (Android & iOS) — Team Leader",
+      "startDate": "2022-03-01",
+      "endDate": "2024-12-31",
+      "summary": "Led development of cross-platform mobile applications and IoT-based Android apps."
+    },
+    {
+      "company": "Hovata Technologies",
+      "position": "Android Application Developer",
+      "startDate": "2020-01-01",
+      "endDate": "2022-02-28",
+      "summary": "Developed IoT-based Android apps including Digital Petrol Pump, Smart Parking, and Smart Wallet."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Hajee Mohammad Danesh Science and Technology University (HSTU)",
+      "area": "M.Sc. (Engineering) in Computer Science and Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "startDate": "2025-01-01",
+      "endDate": "2026-12-31",
+      "gpa": "3.85/4.00",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Hajee Mohammad Danesh Science and Technology University (HSTU)",
+      "area": "B.Sc. (Engineering) in Electrical and Electronic Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "startDate": "2015-01-01",
+      "endDate": "2019-12-31",
+      "gpa": "2.92/4.00",
       "courses": []
     }
   ],
@@ -66,87 +93,50 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Self-Supervised Contrastive and Masked Representation Learning for Reliable Arrhythmia Classification Using Noisy Multi-Lead ECG Signals",
+      "publisher": "M.Sc. Research — in progress",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Md. Bipul Islam and Ashis Kumar Mandal"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "AI-Based System for Automated Detection of Potato Leaf Diseases and Actionable Farmer Guidance",
+      "publisher": "Bangladesh Government Funded Research — manuscript in preparation",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Md. Bipul Islam, Asiqul Tareq Titu, and Ashis Kumar Mandal"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Explainable Physics-Informed Neural Networks for Robust Health Risk Prediction Using Multi-Condition Medical Tabular Data",
+      "publisher": "Manuscript in preparation",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Md. Bipul Islam, Jyotirmay Debnath Pulak, and Ashis Kumar Mandal"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Interpretable Brain Tumor Segmentation Using Foundation-Model Adaptation with Voxel-Level Uncertainty Quantification on Multi-Modal MRI",
+      "publisher": "Manuscript in preparation",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Dino Nath Roy, Md. Bipul Islam, and Ashis Kumar Mandal"
+    },
+    {
+      "name": "Early Warning of Model Degradation Under Progressive Image Corruption: A Comparative Analysis of Confidence, Behavioral, and Explanation Instability",
+      "publisher": "Manuscript in preparation",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Md. Bipul Islam, Rafsan Mahmud, Shirin Mahbuba, and Tazin Alam"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Data Structures and Algorithms",
+      "institution": "HSTU, Department of Computer Science and Engineering",
+      "date": "2025-01-01",
+      "role": "Assistant DSA Instructor",
+      "description": "Assist in teaching Data Structures and Algorithms to 2nd-year undergraduate students."
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }

@@ -1,5 +1,6 @@
 ---
 layout: archive
+title: "Education"
 permalink: /education/
 author_profile: true
 ---
@@ -10,7 +11,7 @@ author_profile: true
 
   <div class="resume-item">
     <h3 class="resume-item__title">M.Sc. (Engineering) in Computer Science and Engineering</h3>
-    <p class="resume-item__meta"><span class="resume-item__place">Hajee Mohammad Danesh Science and Technology University <span class="sep">&bull;</span> Dinajpur, Bangladesh</span><span class="resume-item__period">2025 &ndash; Present</span></p>
+    <p class="resume-item__meta"><span class="resume-item__place">Hajee Mohammad Danesh Science and Technology University <span class="sep">&bull;</span> Dinajpur, Bangladesh</span><span class="resume-item__period">Jan 2025 &ndash; Present (Expected Dec 2026)</span></p>
     <p class="resume-item__note">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a> <span class="sep">&bull;</span> Awarded Research Assistant Position 2025&ndash;2026</p>
     <p class="resume-item__highlight">GPA: 3.85 / 4.00 (Upto 2nd Semester)</p>
   </div>

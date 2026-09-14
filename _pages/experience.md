@@ -9,34 +9,29 @@ author_profile: true
   <hr class="resume-card__rule">
 
   <div class="resume-item">
+    <h3 class="resume-item__title">Student Researcher</h3>
+    <p class="resume-item__meta"><span class="resume-item__place">Elite Research Lab</span><span class="resume-item__period">Jul 2026 &ndash; Present</span></p>
+    <ul class="resume-item__list">
+      <li>Conducting research on AI in Healthcare, Clinical AI, and Human-Centered AI, focusing on developing reliable and interpretable models for clinical decision support.</li>
+    </ul>
+  </div>
+
+  <div class="resume-item">
     <h3 class="resume-item__title">Graduate Research Assistant</h3>
     <p class="resume-item__meta"><span class="resume-item__place">Computer Science Lab, Hajee Mohammad Danesh Science and Technology University (HSTU) <span class="sep">&bull;</span> Bangladesh</span><span class="resume-item__period">Jan 2025 &ndash; Present</span></p>
     <p class="resume-item__note">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
     <ul class="resume-item__list">
-      <li>Conducting research in AI, Machine Learning, and Deep Learning, focusing on representation learning and transfer learning across diverse datasets.</li>
-      <li>Evaluating pre-trained models (Kinetics-400, MiT, LLMs) using full fine-tuning, linear probing, and few-shot learning.</li>
-      <li>Applying Computer Vision and NLP methods with PyTorch, TensorFlow, Hugging Face, spaCy, and PySpark for large-scale experiments.</li>
+      <li>Developing self-supervised contrastive and masked representation learning methods for reliable arrhythmia classification from noisy multi-lead ECG signals using PyTorch and TensorFlow.</li>
+      <li>Leading a Bangladesh Government funded research project on AI-based automated detection of potato leaf diseases with actionable farmer guidance.</li>
+      <li>Designing and evaluating deep learning pipelines including pre-trained model adaptation (fine-tuning, linear probing, few-shot learning) across biomedical and agricultural datasets.</li>
     </ul>
   </div>
 
   <div class="resume-item">
     <h3 class="resume-item__title">Research Assistant</h3>
     <p class="resume-item__meta"><span class="resume-item__place">Walton ICT Lab (R&amp;D Lab), Walton Digi-Tech Industries Ltd <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Mar 2023 &ndash; Dec 2024</span></p>
-    <p class="resume-item__note">Lab Supervisor: <a href="https://www.linkedin.com/in/sanjay-kumar-roy-212a0924/" target="_blank" rel="noopener noreferrer">Sanjay Kumar Roy</a></p>
     <ul class="resume-item__list">
-      <li>Led development of cross-platform mobile applications for internal use and client projects (educational and HR management systems).</li>
-      <li>Developed IoT-based Android applications for smart devices including the Walton Tick Smart Watch and FitPro Smart Weight Scale.</li>
-      <li>Implemented real-time device communication, data analytics, REST API integration, and cloud synchronization.</li>
-    </ul>
-  </div>
-
-  <div class="resume-item">
-    <h3 class="resume-item__title">Independent Researcher</h3>
-    <p class="resume-item__meta"><span class="resume-item__place">Collaborative Research Initiative</span><span class="resume-item__period">Jan 2024 &ndash; Dec 2024</span></p>
-    <ul class="resume-item__list">
-      <li>Conducted independent research in AI, Machine Learning, and Deep Learning with a focus on interdisciplinary approaches.</li>
-      <li>Collaborated with research partners on journal publications in explainable AI and computer vision.</li>
-      <li>Developed novel methodologies by hybridizing techniques from electrical engineering with AI.</li>
+      <li>Researched and developed cross-platform mobile and IoT software products, including educational systems, HR management tools, and smart device applications.</li>
     </ul>
   </div>
 </div>

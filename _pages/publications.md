@@ -4,25 +4,79 @@ permalink: /publications/
 author_profile: true
 ---
 
-For the most up-to-date list, see my [[Google Scholar Profile](https://scholar.google.com/citations?user=PsHZ75wAAAAJ&hl=en){:target="_blank" rel="noopener noreferrer"}, [ResearchGate](https://www.researchgate.net/profile/Md-Bipul-Islam?ev=hdr_xprf){:target="_blank" rel="noopener noreferrer"}, [ORCID](https://orcid.org/0000-0002-1623-359X){:target="_blank" rel="noopener noreferrer"}].
+<p>For the most up-to-date list, see my
+  <a href="https://scholar.google.com/citations?user=ky5HoS4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>,
+  <a href="https://www.researchgate.net/profile/Md-Bipul-Islam?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">ResearchGate</a>,
+  <a href="https://orcid.org/0009-0005-9923-6201" target="_blank" rel="noopener noreferrer">ORCID</a>.
+</p>
 
-\* indicates authors with equal contribution.
+<div class="pub-year-divider"><span>2026 (In Progress)</span></div>
 
-### Preprints &amp; Manuscripts in Preparation
+<ul class="pub-list">
+  <li>
+    <strong>Md. Bipul Islam</strong> and Ashis Kumar Mandal.
+    <a class="pub-title" href="#">Self-Supervised Contrastive and Masked Representation Learning for Reliable Arrhythmia Classification Using Noisy Multi-Lead ECG Signals</a>.
+    <em>M.Sc. Research &mdash; in progress.</em>
+  </li>
+</ul>
 
-*The following research papers are currently in preparation and have not yet been published.*
+<ul class="pub-list">
+  <li>
+    <strong>Md. Bipul Islam</strong>, Asiqul Tareq Titu, and Ashis Kumar Mandal.
+    <a class="pub-title" href="#">AI-Based System for Automated Detection of Potato Leaf Diseases and Actionable Farmer Guidance</a>.
+    <em>Bangladesh Government Funded Research &mdash; manuscript in preparation.</em>
+  </li>
+  <li>
+    <strong>Md. Bipul Islam</strong>, Jyotirmay Debnath Pulak, and Ashis Kumar Mandal.
+    <a class="pub-title" href="#">Explainable Physics-Informed Neural Networks for Robust Health Risk Prediction Using Multi-Condition Medical Tabular Data</a>.
+    <em>Manuscript in preparation.</em>
+  </li>
+  <li>
+    Dino Nath Roy, <strong>Md. Bipul Islam</strong>, and Ashis Kumar Mandal.
+    <a class="pub-title" href="#">Interpretable Brain Tumor Segmentation Using Foundation-Model Adaptation with Voxel-Level Uncertainty Quantification on Multi-Modal MRI</a>.
+    <em>Manuscript in preparation.</em>
+  </li>
+  <li>
+    <strong>Md. Bipul Islam</strong>, Rafsan Mahmud, Shirin Mahbuba, and Tazin Alam.
+    <a class="pub-title" href="#">Early Warning of Model Degradation Under Progressive Image Corruption: A Comparative Analysis of Confidence, Behavioral, and Explanation Instability</a>.
+    <em>Manuscript in preparation.</em>
+  </li>
+</ul>
 
-**From Income to Intake: A Data Science Approach to Understanding Socioeconomic Influences on Nutritional Choices in U.S. Households** <br>
-**Md. Bipul Islam**, Md. Rakib, Md. Rafiul Islam, Md. Mintu Hossain. <i>(Preprint &mdash; manuscript in preparation)</i>
-
-**From Local to Global: Comparative Forecasting of Internet Adoption Across Countries Using Machine Learning Approaches** <br>
-**Md. Bipul Islam**, Md. Abdur Rakib, Matiur Rahman Tareq, Ashis Kumar Mandal. <i>(Preprint &mdash; manuscript in preparation)</i>
-
-**An Explainable AI Framework for Understanding Psychosocial and Demographic Factors in U.S. Drug Addiction Prediction** <br>
-**Md. Bipul Islam**, Dino Nath Roy, Md. Rafiul Islam, Md. Mintu Hossain. <i>(Preprint &mdash; manuscript in preparation)</i>
-
-**Leveraging Machine Learning, Deep Learning, and Large Language Models to Predict Healthcare Utilization and Costs in the United States** <br>
-**Md. Bipul Islam**, Md. Abdur Rakib, Farhan Nowroj, Md. Rakib Islam. <i>(Preprint &mdash; manuscript in preparation)</i>
-
-**Decoding Public Perceptions of the July Revolution in Bangladesh: A Multimodal Social Media Sentiment Analysis Using Hybrid Transformer Models** <br>
-**Md. Bipul Islam**, Abdur Rakib, Md. Hafizul Islam. <i>(Preprint &mdash; manuscript in preparation)</i>
+<style>
+.pub-year-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.8rem 0 1rem;
+  color: var(--global-text-color, #333);
+}
+.pub-year-divider::before,
+.pub-year-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--global-border-color, #ccc);
+}
+.pub-year-divider span {
+  padding: 0 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.pub-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.pub-list li {
+  margin-bottom: 0.9rem;
+  line-height: 1.6;
+}
+a.pub-title {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: normal;
+}
+a.pub-title:hover {
+  text-decoration: underline;
+}
+</style>
