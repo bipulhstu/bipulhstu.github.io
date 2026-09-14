@@ -36,6 +36,15 @@
 
     nav {
       z-index: 10;
+
+      // Align menu items with the page content column:
+      // mirrors .archive geometry (span 10 of 12 last + prefix 0.5 of 12)
+      // so the first item starts where the content text starts and the
+      // last item ends where the content text ends.
+      @include breakpoint($large) {
+        @include span(10 of 12 last);
+        @include prefix(0.5 of 12);
+      }
     }
 
     a {

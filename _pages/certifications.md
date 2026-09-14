@@ -39,26 +39,26 @@ author_profile: true
     <img src="/img/certificates/coursera/ai_for_everyone_coursera_certificate.png" alt="AI For Everyone" loading="lazy">
     <span class="cert-item__caption">AI For Everyone</span>
   </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/large_language_model_concepts.jpg" data-cert-caption="Large Language Model Concepts">
+    <img src="/img/certificates/large_language_model_concepts.jpg" alt="Large Language Model Concepts" loading="lazy">
+    <span class="cert-item__caption">Large Language Model Concepts</span>
+  </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/ai_ethics.jpg" data-cert-caption="AI Ethics">
+    <img src="/img/certificates/ai_ethics.jpg" alt="AI Ethics" loading="lazy">
+    <span class="cert-item__caption">AI Ethics</span>
+  </button>
   <button type="button" class="cert-item" data-cert-full="/img/certificates/ai_fundamentals_certificate.jpg" data-cert-caption="AI Fundamentals">
     <img src="/img/certificates/ai_fundamentals_certificate.jpg" alt="AI Fundamentals" loading="lazy">
     <span class="cert-item__caption">AI Fundamentals</span>
   </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/fast_api_certificate.jpg" data-cert-caption="FastAPI">
-    <img src="/img/certificates/fast_api_certificate.jpg" alt="FastAPI" loading="lazy">
-    <span class="cert-item__caption">FastAPI</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/data_manipulation_with_pandas_cpe_certificate.jpg" data-cert-caption="Data Manipulation with Pandas">
-    <img src="/img/certificates/data_manipulation_with_pandas_cpe_certificate.jpg" alt="Data Manipulation with Pandas" loading="lazy">
-    <span class="cert-item__caption">Data Manipulation with Pandas</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/ibm_python_py010en_certificate.jpg" data-cert-caption="IBM Python Py010en">
-    <img src="/img/certificates/ibm_python_py010en_certificate.jpg" alt="IBM Python Py010en" loading="lazy">
-    <span class="cert-item__caption">IBM Python Py010en</span>
-  </button>
-   <button type="button" class="cert-item" data-cert-full="/img/certificates/data_structures_and_algorithms.jpg" data-cert-caption="Data Structures and Algorithms">
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/data_structures_and_algorithms.jpg" data-cert-caption="Data Structures and Algorithms">
     <img src="/img/certificates/data_structures_and_algorithms.jpg" alt="Data Structures and Algorithms" loading="lazy">
     <span class="cert-item__caption">Data Structures and Algorithms</span>
   </button>
+</div>
+
+<h2>Test Scores</h2>
+<div class="cert-grid">
   <button type="button" class="cert-item" data-cert-full="/img/certificates/gre_certificate.jpg" data-cert-caption="GRE">
     <img src="/img/certificates/gre_certificate.jpg" alt="GRE" loading="lazy">
     <span class="cert-item__caption">GRE</span>
@@ -66,150 +66,6 @@ author_profile: true
   <button type="button" class="cert-item" data-cert-full="/img/certificates/duolingo_certificate.jpg" data-cert-caption="Duolingo">
     <img src="/img/certificates/duolingo_certificate.jpg" alt="Duolingo" loading="lazy">
     <span class="cert-item__caption">Duolingo</span>
-  </button>
-</div>
-
-<h2>Course Accomplishments</h2>
-<div class="cert-grid">
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/ai_ethics.jpg" data-cert-caption="AI Ethics">
-    <img src="/img/certificates/ai_ethics.jpg" alt="AI Ethics" loading="lazy">
-    <span class="cert-item__caption">AI Ethics</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/ai_fundamentals.jpg" data-cert-caption="AI Fundamentals">
-    <img src="/img/certificates/ai_fundamentals.jpg" alt="AI Fundamentals" loading="lazy">
-    <span class="cert-item__caption">AI Fundamentals</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/building_apis_in_python.jpg" data-cert-caption="Building APIs in Python">
-    <img src="/img/certificates/building_apis_in_python.jpg" alt="Building APIs in Python" loading="lazy">
-    <span class="cert-item__caption">Building APIs in Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/data_manipulation_in_python.jpg" data-cert-caption="Data Manipulation in Python">
-    <img src="/img/certificates/data_manipulation_in_python.jpg" alt="Data Manipulation in Python" loading="lazy">
-    <span class="cert-item__caption">Data Manipulation in Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/data_manipulation_with_pandas.jpg" data-cert-caption="Data Manipulation with Pandas">
-    <img src="/img/certificates/data_manipulation_with_pandas.jpg" alt="Data Manipulation with Pandas" loading="lazy">
-    <span class="cert-item__caption">Data Manipulation with Pandas</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/data_types_and_exceptions_in_java.jpg" data-cert-caption="Data Types and Exceptions in Java">
-    <img src="/img/certificates/data_types_and_exceptions_in_java.jpg" alt="Data Types and Exceptions in Java" loading="lazy">
-    <span class="cert-item__caption">Data Types and Exceptions in Java</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/data_types_in_python.jpg" data-cert-caption="Data Types in Python">
-    <img src="/img/certificates/data_types_in_python.jpg" alt="Data Types in Python" loading="lazy">
-    <span class="cert-item__caption">Data Types in Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/generative_ai_concepts.jpg" data-cert-caption="Generative AI Concepts">
-    <img src="/img/certificates/generative_ai_concepts.jpg" alt="Generative AI Concepts" loading="lazy">
-    <span class="cert-item__caption">Generative AI Concepts</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intermediate_git.jpg" data-cert-caption="Intermediate Git">
-    <img src="/img/certificates/intermediate_git.jpg" alt="Intermediate Git" loading="lazy">
-    <span class="cert-item__caption">Intermediate Git</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intermediate_java.jpg" data-cert-caption="Intermediate Java">
-    <img src="/img/certificates/intermediate_java.jpg" alt="Intermediate Java" loading="lazy">
-    <span class="cert-item__caption">Intermediate Java</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intermediate_python.jpg" data-cert-caption="Intermediate Python">
-    <img src="/img/certificates/intermediate_python.jpg" alt="Intermediate Python" loading="lazy">
-    <span class="cert-item__caption">Intermediate Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intermediate_python_for_developers.jpg" data-cert-caption="Intermediate Python For Developers">
-    <img src="/img/certificates/intermediate_python_for_developers.jpg" alt="Intermediate Python For Developers" loading="lazy">
-    <span class="cert-item__caption">Intermediate Python For Developers</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intermediate_sql.jpg" data-cert-caption="Intermediate SQL">
-    <img src="/img/certificates/intermediate_sql.jpg" alt="Intermediate SQL" loading="lazy">
-    <span class="cert-item__caption">Intermediate SQL</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intro_to_apis_in_python.jpg" data-cert-caption="Intro to APIs in Python">
-    <img src="/img/certificates/intro_to_apis_in_python.jpg" alt="Intro to APIs in Python" loading="lazy">
-    <span class="cert-item__caption">Intro to APIs in Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intro_to_python_for_developers.jpg" data-cert-caption="Intro to Python For Developers">
-    <img src="/img/certificates/intro_to_python_for_developers.jpg" alt="Intro to Python For Developers" loading="lazy">
-    <span class="cert-item__caption">Intro to Python For Developers</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/intro_to_visualization_with_matplotlib.jpg" data-cert-caption="Intro to Visualization with Matplotlib">
-    <img src="/img/certificates/intro_to_visualization_with_matplotlib.jpg" alt="Intro to Visualization with Matplotlib" loading="lazy">
-    <span class="cert-item__caption">Intro to Visualization with Matplotlib</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_fast_api.jpg" data-cert-caption="Introduction to FastAPI">
-    <img src="/img/certificates/introduction_to_fast_api.jpg" alt="Introduction to FastAPI" loading="lazy">
-    <span class="cert-item__caption">Introduction to FastAPI</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_functions_in_python.jpg" data-cert-caption="Introduction to Functions in Python">
-    <img src="/img/certificates/introduction_to_functions_in_python.jpg" alt="Introduction to Functions in Python" loading="lazy">
-    <span class="cert-item__caption">Introduction to Functions in Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_git.jpg" data-cert-caption="Introduction to Git">
-    <img src="/img/certificates/introduction_to_git.jpg" alt="Introduction to Git" loading="lazy">
-    <span class="cert-item__caption">Introduction to Git</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_java.jpg" data-cert-caption="Introduction to Java">
-    <img src="/img/certificates/introduction_to_java.jpg" alt="Introduction to Java" loading="lazy">
-    <span class="cert-item__caption">Introduction to Java</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_numpy.jpg" data-cert-caption="Introduction to NumPy">
-    <img src="/img/certificates/introduction_to_numpy.jpg" alt="Introduction to NumPy" loading="lazy">
-    <span class="cert-item__caption">Introduction to NumPy</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_oop_in_python.jpg" data-cert-caption="Introduction to OOP in Python">
-    <img src="/img/certificates/introduction_to_oop_in_python.jpg" alt="Introduction to OOP in Python" loading="lazy">
-    <span class="cert-item__caption">Introduction to OOP in Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_python.jpg" data-cert-caption="Introduction to Python">
-    <img src="/img/certificates/introduction_to_python.jpg" alt="Introduction to Python" loading="lazy">
-    <span class="cert-item__caption">Introduction to Python</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/introduction_to_sql.jpg" data-cert-caption="Introduction to SQL">
-    <img src="/img/certificates/introduction_to_sql.jpg" alt="Introduction to SQL" loading="lazy">
-    <span class="cert-item__caption">Introduction to SQL</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/java_fundamentals.jpg" data-cert-caption="Java Fundamentals">
-    <img src="/img/certificates/java_fundamentals.jpg" alt="Java Fundamentals" loading="lazy">
-    <span class="cert-item__caption">Java Fundamentals</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/joining_data_in_sql.jpg" data-cert-caption="Joining Data in SQL">
-    <img src="/img/certificates/joining_data_in_sql.jpg" alt="Joining Data in SQL" loading="lazy">
-    <span class="cert-item__caption">Joining Data in SQL</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/joining_data_with_pandas.jpg" data-cert-caption="Joining Data with Pandas">
-    <img src="/img/certificates/joining_data_with_pandas.jpg" alt="Joining Data with Pandas" loading="lazy">
-    <span class="cert-item__caption">Joining Data with Pandas</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/large_language_model_concepts.jpg" data-cert-caption="Large Language Model Concepts">
-    <img src="/img/certificates/large_language_model_concepts.jpg" alt="Large Language Model Concepts" loading="lazy">
-    <span class="cert-item__caption">Large Language Model Concepts</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/python_fundamentals.jpg" data-cert-caption="Python Fundamentals">
-    <img src="/img/certificates/python_fundamentals.jpg" alt="Python Fundamentals" loading="lazy">
-    <span class="cert-item__caption">Python Fundamentals</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/python_toolbox.jpg" data-cert-caption="Python Toolbox">
-    <img src="/img/certificates/python_toolbox.jpg" alt="Python Toolbox" loading="lazy">
-    <span class="cert-item__caption">Python Toolbox</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/reshaping_data_with_pandas.jpg" data-cert-caption="Reshaping Data with Pandas">
-    <img src="/img/certificates/reshaping_data_with_pandas.jpg" alt="Reshaping Data with Pandas" loading="lazy">
-    <span class="cert-item__caption">Reshaping Data with Pandas</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/understanding_ai.jpg" data-cert-caption="Understanding AI">
-    <img src="/img/certificates/understanding_ai.jpg" alt="Understanding AI" loading="lazy">
-    <span class="cert-item__caption">Understanding AI</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/understanding_chatgpt.jpg" data-cert-caption="Understanding ChatGPT">
-    <img src="/img/certificates/understanding_chatgpt.jpg" alt="Understanding ChatGPT" loading="lazy">
-    <span class="cert-item__caption">Understanding ChatGPT</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/understanding_ml.jpg" data-cert-caption="Understanding ML">
-    <img src="/img/certificates/understanding_ml.jpg" alt="Understanding ML" loading="lazy">
-    <span class="cert-item__caption">Understanding ML</span>
-  </button>
-  <button type="button" class="cert-item" data-cert-full="/img/certificates/writing_functions_in_python.jpg" data-cert-caption="Writing Functions in Python">
-    <img src="/img/certificates/writing_functions_in_python.jpg" alt="Writing Functions in Python" loading="lazy">
-    <span class="cert-item__caption">Writing Functions in Python</span>
   </button>
 </div>
 

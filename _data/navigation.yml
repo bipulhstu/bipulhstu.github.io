@@ -21,15 +21,6 @@ main:
   - title: "Education"
     url: /education/
 
-  - title: "Skills"
-    url: /skills/
-
-  - title: "Teaching"
-    url: /teaching/
-
-  - title: "Leadership"
-    url: /leadership/
-
   - title: "Certifications"
     url: /certifications/
 
