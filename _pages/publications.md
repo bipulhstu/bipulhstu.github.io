@@ -4,7 +4,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-<p>For the most up-to-date list, see my
+<p class="pub-profile-links">For the most up-to-date list, see my
   <a href="https://scholar.google.com/citations?user=ky5HoS4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>,
   <a href="https://www.researchgate.net/profile/Md-Bipul-Islam?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">ResearchGate</a>,
   <a href="https://orcid.org/0009-0005-9923-6201" target="_blank" rel="noopener noreferrer">ORCID</a>.
@@ -78,5 +78,11 @@ a.pub-title {
 }
 a.pub-title:hover {
   text-decoration: underline;
+}
+.pub-profile-links a,
+.pub-profile-links a:visited,
+.pub-profile-links a:hover,
+.pub-profile-links a:active {
+  color: #2980b9;
 }
 </style>

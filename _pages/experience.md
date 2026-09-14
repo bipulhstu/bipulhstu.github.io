@@ -5,15 +5,15 @@ permalink: /experience/
 author_profile: true
 ---
 
-<div class="resume-card">
-  <p class="resume-card__label">Research Experience</p>
+<div class="resume-card experience-card">
+  <h2 class="resume-card__label">Research Experience</h2>
   <hr class="resume-card__rule">
 
   <div class="resume-item">
     <h3 class="resume-item__title">Student Researcher</h3>
     <p class="resume-item__meta"><span class="resume-item__place">Elite Research Lab</span><span class="resume-item__period">Jul 2026 &ndash; Present</span></p>
     <ul class="resume-item__list">
-      <li>Conducting research on AI in Healthcare, Clinical AI, and Human-Centered AI, focusing on developing reliable and interpretable models for clinical decision support.</li>
+      <li>Investigate reliable and interpretable AI methods for clinical decision support.</li>
     </ul>
   </div>
 
@@ -22,9 +22,8 @@ author_profile: true
     <p class="resume-item__meta"><span class="resume-item__place">Computer Science Lab, Hajee Mohammad Danesh Science and Technology University (HSTU) <span class="sep">&bull;</span> Bangladesh</span><span class="resume-item__period">Jan 2025 &ndash; Present</span></p>
     <p class="resume-item__note">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
     <ul class="resume-item__list">
-      <li>Developing self-supervised contrastive and masked representation learning methods for reliable arrhythmia classification from noisy multi-lead ECG signals using PyTorch and TensorFlow.</li>
-      <li>Leading a Bangladesh Government funded research project on AI-based automated detection of potato leaf diseases with actionable farmer guidance.</li>
-      <li>Designing and evaluating deep learning pipelines including pre-trained model adaptation (fine-tuning, linear probing, few-shot learning) across biomedical and agricultural datasets.</li>
+      <li>Investigate self-supervised representation learning for arrhythmia classification from noisy ECG signals.</li>
+      <li>Lead research on automated potato leaf disease detection, funded by the Government of Bangladesh.</li>
     </ul>
   </div>
 
@@ -32,46 +31,21 @@ author_profile: true
     <h3 class="resume-item__title">Research Assistant</h3>
     <p class="resume-item__meta"><span class="resume-item__place">Walton ICT Lab (R&amp;D Lab), Walton Digi-Tech Industries Ltd <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Mar 2023 &ndash; Dec 2024</span></p>
     <ul class="resume-item__list">
-      <li>Researched and developed cross-platform mobile and IoT software products, including educational systems, HR management tools, and smart device applications.</li>
+      <li>Conducted applied research and development in mobile and IoT systems.</li>
     </ul>
   </div>
 </div>
 
-<div class="resume-card">
-  <p class="resume-card__label">Professional Experience</p>
+<div class="resume-card experience-card">
+  <h2 class="resume-card__label">Teaching &amp; Academic Mentorship</h2>
   <hr class="resume-card__rule">
 
   <div class="resume-item">
-    <h3 class="resume-item__title">Software Engineer (Android &amp; iOS) &mdash; Team Leader</h3>
-    <p class="resume-item__meta"><span class="resume-item__place">Walton Digi-Tech Industries Ltd <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Mar 2022 &ndash; Dec 2024</span></p>
-    <ul class="resume-item__list">
-      <li>Led development of cross-platform apps, including the Bench Educational App and HRMS, for internal use and clients.</li>
-      <li>Built IoT-based Android apps for the Walton Tick Smart Watch and FitPro Smart Weight Scale, enabling real-time device communication and data analytics.</li>
-      <li>Managed the app lifecycle, REST API integration, cloud sync, and mentored junior developers.</li>
-    </ul>
-  </div>
-
-  <div class="resume-item">
-    <h3 class="resume-item__title">Android Application Developer</h3>
-    <p class="resume-item__meta"><span class="resume-item__place">Hovata Technologies <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Jan 2020 &ndash; Feb 2022</span></p>
-    <ul class="resume-item__list">
-      <li>Developed IoT-based Android apps including Digital Petrol Pump (Petrol ERP &amp; POS), Smart Parking Management System (Hovata Parking), and Smart Wallet Management App (Linn Books).</li>
-      <li>Implemented real-time device communication, secure transactions, and cloud integration for digital solutions.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="resume-card">
-  <p class="resume-card__label">Teaching Experience</p>
-  <hr class="resume-card__rule">
-
-  <div class="resume-item">
-    <h3 class="resume-item__title">Teaching Assistant, Data Structures and Algorithms (CSE 201)</h3>
+    <h3 class="resume-item__title">Teaching Assistant</h3>
     <p class="resume-item__meta"><span class="resume-item__place">Department of Computer Science and Engineering, HSTU <span class="sep">&bull;</span> Bangladesh</span><span class="resume-item__period">Jan 2025 &ndash; Present</span></p>
     <p class="resume-item__note">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
     <ul class="resume-item__list">
-      <li>Assist Dr. Ashis Kumar Mandal in delivering lectures and lab sessions on Data Structures and Algorithms to 2nd-year undergraduate students.</li>
-      <li>Prepare course materials, evaluate assignments, and conduct tutorial sessions covering arrays, linked lists, stacks, queues, trees, graphs, sorting, and searching algorithms.</li>
+      <li>Assist with undergraduate instruction in Computer Programming, including laboratory sessions, tutorials, and assessment.</li>
     </ul>
   </div>
 
@@ -80,26 +54,83 @@ author_profile: true
     <p class="resume-item__meta"><span class="resume-item__place">Independent Teaching</span><span class="resume-item__period">Jan 2016 &ndash; Dec 2024</span></p>
     <ul class="resume-item__list">
       <li>Taught programming and professional Android/iOS app development to undergraduate students, guiding several toward successful employment after their graduation.</li>
-      <li>Mentored <strong>HSC-level</strong> students in Higher Mathematics, ICT, and English &mdash; building conceptual foundations and guiding board-exam and university-admission preparation.</li>
-      <li>Mentored <strong>SSC-level</strong> students in Physics, Chemistry, Mathematics, ICT, and English &mdash; strengthening fundamentals through concept-based teaching, regular assessments, and personalized guidance.</li>
+      <li>Mentored HSC students in Higher Mathematics, ICT, and English, and SSC students in Physics, Chemistry, Mathematics, ICT, and English &mdash; emphasizing conceptual understanding, regular assessments, and preparation for board examinations and university admission.</li>
     </ul>
   </div>
 </div>
 
-<div class="resume-card">
-  <p class="resume-card__label">Academic Mentorship</p>
+<div class="resume-card experience-card">
+  <h2 class="resume-card__label">Industry Experience</h2>
   <hr class="resume-card__rule">
 
   <div class="resume-item">
-    <p>I am passionate about empowering computer science students through comprehensive programming education and mentorship. I focus on building strong foundations in programming, data structures, and algorithms while encouraging students to explore advanced areas like data science and machine learning. My teaching philosophy emphasizes practical problem-solving, hands-on coding experience, and fostering a growth mindset that prepares students for successful careers in technology.</p>
-    <p>I mentor students from leading Bangladeshi universities including KUET, AIUB, IUT, and SUST, primarily focusing on 2nd- to 4th-year computer science students. My mentorship covers:</p>
+    <h3 class="resume-item__title">Software Engineer (Android &amp; iOS) &mdash; Team Leader</h3>
+    <p class="resume-item__meta"><span class="resume-item__place">Walton Digi-Tech Industries Ltd <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Mar 2022 &ndash; Dec 2024</span></p>
     <ul class="resume-item__list">
-      <li><strong>Programming Fundamentals</strong> &mdash; core programming concepts in C, C++, Java, and Python with emphasis on clean code and debugging.</li>
-      <li><strong>Data Structures &amp; Algorithms</strong> &mdash; in-depth understanding of data structures and algorithmic thinking for complex problems.</li>
-      <li><strong>Data Science &amp; Machine Learning</strong> &mdash; Python libraries (NumPy, Pandas, Scikit-learn), statistical analysis, and ML fundamentals.</li>
-      <li><strong>Research Guidance</strong> &mdash; scientific research methodology, academic writing, research ethics, and publishing.</li>
-      <li><strong>Career Development</strong> &mdash; internships, job preparation, technical interviews, and building strong programming portfolios.</li>
+      <li>Led mobile and IoT software development and mentored junior developers.</li>
     </ul>
-    <p>Many of my students have secured competitive internships, research positions, and job opportunities, and I also help students pursue funding and scholarships.</p>
+  </div>
+
+  <div class="resume-item">
+    <h3 class="resume-item__title">Android Application Developer</h3>
+    <p class="resume-item__meta"><span class="resume-item__place">Hovata Technologies <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Jan 2020 &ndash; Feb 2022</span></p>
+    <ul class="resume-item__list">
+      <li>Developed Android applications for IoT and connected devices.</li>
+    </ul>
   </div>
 </div>
+
+<style>
+/* Academic section headings, scoped to the Experience page. */
+.experience-card {
+  --resume-accent: rgb(0, 76, 153);
+}
+
+.experience-card a,
+.experience-card a:visited,
+.experience-card a:hover,
+.experience-card a:active {
+  color: #2980b9;
+}
+
+.experience-card .resume-card__label {
+  color: var(--resume-accent);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.experience-card .resume-item__meta,
+.experience-card .resume-item__note {
+  color: #515d69;
+  font-style: normal;
+}
+
+.experience-card .resume-item__period {
+  white-space: normal;
+}
+
+html[data-theme="dark"] .experience-card .resume-card__label {
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  background: #e8eff6;
+}
+
+html[data-theme="dark"] .experience-card .resume-item__meta,
+html[data-theme="dark"] .experience-card .resume-item__note {
+  color: #d4dce4;
+}
+
+@media (max-width: 600px) {
+  .experience-card .resume-item__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-card .resume-item__period {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+</style>
