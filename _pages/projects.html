@@ -1,0 +1,358 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="proj-intro">A selection of my machine learning, deep learning, and data science projects. Click any row to
+  view the full details.</p>
+
+<div class="proj-list">
+  {% for post in site.portfolio %}
+  <button type="button" class="proj-row" data-pf-target="pf-modal-{{ forloop.index }}">
+    {% if post.image %}
+    <div class="proj-row__thumb"><img src="{{ base_path }}{{ post.image }}" alt="{{ post.title }}" loading="lazy"></div>
+    {% endif %}
+    <div class="proj-row__body">
+      <div class="proj-row__top">
+        <h3 class="proj-row__title">{{ post.title }}</h3>
+        {% if post.category %}<span class="proj-row__tag">{{ post.category }}</span>{% endif %}
+      </div>
+      <p class="proj-row__excerpt">{{ post.excerpt }}</p>
+    </div>
+    <span class="proj-row__arrow">&rarr;</span>
+  </button>
+  {% endfor %}
+</div>
+
+{% for post in site.portfolio %}
+<div class="proj-modal" id="pf-modal-{{ forloop.index }}" role="dialog" aria-modal="true"
+  aria-labelledby="pf-modal-title-{{ forloop.index }}" hidden>
+  <div class="proj-modal__overlay" data-pf-close></div>
+  <div class="proj-modal__dialog" role="document">
+    <button type="button" class="proj-modal__close" data-pf-close aria-label="Close">&times;</button>
+    {% if post.image %}<img class="proj-modal__image" src="{{ base_path }}{{ post.image }}" alt="{{ post.title }}">{%
+    endif %}
+    {% if post.category %}<span class="proj-row__tag">{{ post.category }}</span>{% endif %}
+    <h2 class="proj-modal__title" id="pf-modal-title-{{ forloop.index }}">{{ post.title }}</h2>
+    <div class="proj-modal__content">
+      {{ post.content }}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<style>
+  /* ── Projects page styles ── */
+  :root {
+    --proj-accent: rgb(0, 76, 153);
+  }
+
+  .proj-intro {
+    color: var(--global-text-color-light, #555);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* ── Row list ── */
+  .proj-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+  }
+
+  .proj-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.8rem 1rem;
+    margin: 0;
+    cursor: pointer;
+    background: var(--global-bg-color, #fff);
+    border: 1px solid var(--global-border-color, #e0e0e0);
+    border-left: 3px solid var(--proj-accent);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+    font-family: inherit;
+    color: inherit;
+    transition: box-shadow .2s ease, border-color .2s ease;
+  }
+
+  .proj-row:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+    border-color: var(--proj-accent);
+  }
+
+  .proj-row__thumb {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 65px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--global-border-color, #eee);
+  }
+
+  .proj-row__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .proj-row__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .proj-row__top {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+  }
+
+  .proj-row__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--global-text-color, #222);
+  }
+
+  .proj-row__tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--proj-accent);
+    background: #e8eff6;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .proj-row__excerpt {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light, #555);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .proj-row__arrow {
+    flex: 0 0 auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--proj-accent);
+    opacity: 0.4;
+    transition: opacity .15s, transform .15s;
+  }
+
+  .proj-row:hover .proj-row__arrow {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+
+  /* ── Modal ── */
+  .proj-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+    overflow-y: auto;
+  }
+
+  .proj-modal[hidden] {
+    display: none;
+  }
+
+  .proj-modal__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(3px);
+  }
+
+  .proj-modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(860px, 96vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: var(--global-bg-color, #fff);
+    color: var(--global-text-color, #222);
+    border: 1px solid var(--global-border-color, #e0e0e0);
+    border-left: 3px solid var(--proj-accent);
+    border-radius: 8px;
+    padding: 1.75rem 2rem 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+  }
+
+  .proj-modal__close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 1;
+    font-size: 1.8rem;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    color: var(--global-text-color, #222);
+    transition: background .15s;
+  }
+
+  .proj-modal__close:hover {
+    background: var(--global-border-color, #eee);
+  }
+
+  .proj-modal__image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .proj-modal__title {
+    margin: 0.5rem 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .proj-modal__content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .proj-modal__content a {
+    font-weight: 600;
+    color: var(--proj-accent);
+  }
+
+  .proj-modal__content a:hover {
+    text-decoration: underline;
+  }
+
+  body.pf-modal-open {
+    overflow: hidden;
+  }
+
+  /* ── Dark mode ── */
+  html[data-theme="dark"] .proj-row {
+    background: var(--global-bg-color, #1a1a2e);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    border-left-color: #4a90d9;
+  }
+
+  html[data-theme="dark"] .proj-row:hover {
+    border-color: #4a90d9;
+  }
+
+  html[data-theme="dark"] .proj-row__tag {
+    background: #1e3a5f;
+    color: #7eb8f7;
+  }
+
+  html[data-theme="dark"] .proj-row__title {
+    color: var(--global-text-color, #e0e0e0);
+  }
+
+  html[data-theme="dark"] .proj-row__arrow {
+    color: #7eb8f7;
+  }
+
+  html[data-theme="dark"] .proj-modal__dialog {
+    background: var(--global-bg-color, #1a1a2e);
+    border-left-color: #4a90d9;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .6);
+  }
+
+  html[data-theme="dark"] .proj-modal__content a {
+    color: #7eb8f7;
+  }
+
+  @media (max-width: 600px) {
+    .proj-row {
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      padding: 0.7rem 0.8rem;
+    }
+
+    .proj-row__thumb {
+      flex: 0 0 70px;
+      width: 70px;
+      height: 45px;
+    }
+
+    .proj-row__arrow {
+      display: none;
+    }
+
+    .proj-modal__dialog {
+      padding: 1.2rem 1rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    /* Move every modal to <body> so it escapes overflow-hidden ancestors */
+    document.querySelectorAll('.proj-modal').forEach(function (m) {
+      document.body.appendChild(m);
+    });
+
+    function openModal(m) {
+      m.hidden = false;
+      document.body.classList.add('pf-modal-open');
+      m.querySelectorAll('a[href]').forEach(function (a) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+      });
+      var closeBtn = m.querySelector('.proj-modal__close');
+      if (closeBtn) { closeBtn.focus(); }
+    }
+    function closeModal(m) {
+      m.hidden = true;
+      if (!document.querySelector('.proj-modal:not([hidden])')) {
+        document.body.classList.remove('pf-modal-open');
+      }
+    }
+    document.querySelectorAll('.proj-row').forEach(function (card) {
+      card.addEventListener('click', function () {
+        var m = document.getElementById(card.getAttribute('data-pf-target'));
+        if (m) { openModal(m); }
+      });
+    });
+    document.querySelectorAll('[data-pf-close]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var m = el.closest('.proj-modal');
+        if (m) { closeModal(m); }
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        var open = document.querySelector('.proj-modal:not([hidden])');
+        if (open) { closeModal(open); }
+      }
+    });
+  })();
+</script>

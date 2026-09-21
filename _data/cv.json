@@ -131,11 +131,11 @@
   "presentations": [],
   "teaching": [
     {
-      "course": "Data Structures and Algorithms",
+      "course": "Object Oriented Programming",
       "institution": "HSTU, Department of Computer Science and Engineering",
       "date": "2025-01-01",
-      "role": "Assistant DSA Instructor",
-      "description": "Assist in teaching Data Structures and Algorithms to 2nd-year undergraduate students."
+      "role": "Assistant Programming Instructor",
+      "description": "Assist in teaching Object Oriented Programming to undergraduate students."
     }
   ],
   "portfolio": []

@@ -13,7 +13,7 @@ main:
     url: /publications/
 
   - title: "Projects"
-    url: /portfolio/
+    url: /projects/
 
   - title: "Experience"
     url: /experience/
@@ -26,3 +26,4 @@ main:
 
   - title: "CV"
     url: /cv/
+
