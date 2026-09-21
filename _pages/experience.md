@@ -45,7 +45,7 @@ author_profile: true
     <p class="resume-item__meta"><span class="resume-item__place">Department of Computer Science and Engineering, HSTU <span class="sep">&bull;</span> Bangladesh</span><span class="resume-item__period">Jan 2025 &ndash; Present</span></p>
     <p class="resume-item__note">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
     <ul class="resume-item__list">
-      <li>Assist with undergraduate instruction in Computer Programming, including laboratory sessions, tutorials, and assessment.</li>
+      <li>Assist with undergraduate instruction in Object-Oriented Programming, including laboratory sessions, tutorials, and assessment.</li>
     </ul>
   </div>
 
@@ -68,6 +68,7 @@ author_profile: true
     <p class="resume-item__meta"><span class="resume-item__place">Walton Digi-Tech Industries Ltd <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Mar 2022 &ndash; Dec 2024</span></p>
     <ul class="resume-item__list">
       <li>Led mobile and IoT software development and mentored junior developers.</li>
+      <li>Architected and shipped cross-platform mobile applications (Android/iOS) used by millions of Walton smart-device customers, managing end-to-end delivery from design to Play Store and App Store release.</li>
     </ul>
   </div>
 
@@ -76,14 +77,25 @@ author_profile: true
     <p class="resume-item__meta"><span class="resume-item__place">Hovata Technologies <span class="sep">&bull;</span> Dhaka, Bangladesh</span><span class="resume-item__period">Jan 2020 &ndash; Feb 2022</span></p>
     <ul class="resume-item__list">
       <li>Developed Android applications for IoT and connected devices.</li>
+      <li>Built real-time communication features and RESTful API integrations for smart-home and industrial IoT products, improving device responsiveness and user engagement.</li>
     </ul>
   </div>
 </div>
 
 <style>
-/* Academic section headings, scoped to the Experience page. */
+/* ── Experience page styles ── */
 .experience-card {
   --resume-accent: rgb(0, 76, 153);
+  margin-bottom: 1.8rem;
+  padding: 1.2rem 1.4rem;
+  border-left: 3px solid var(--resume-accent);
+  border-radius: 6px;
+  background: var(--global-bg-color, #fff);
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  transition: box-shadow .2s ease;
+}
+.experience-card:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,.1);
 }
 
 .experience-card a,
@@ -95,42 +107,109 @@ author_profile: true
 
 .experience-card .resume-card__label {
   color: var(--resume-accent);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   line-height: 1.4;
-  letter-spacing: normal;
+  letter-spacing: 0.02em;
   text-transform: none;
+  margin: 0 0 0.2rem;
 }
 
-.experience-card .resume-item__meta,
+.experience-card .resume-card__rule {
+  border: none;
+  border-top: 1px solid var(--global-border-color, #e0e0e0);
+  margin: 0.4rem 0 1rem;
+}
+
+.experience-card .resume-item {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
+  border-left: 2px solid #dde4ed;
+}
+.experience-card .resume-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-card .resume-item__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.15rem;
+  color: var(--global-text-color, #222);
+}
+
+.experience-card .resume-item__meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  color: #515d69;
+  font-size: 0.88rem;
+  font-style: normal;
+  margin-bottom: 0.3rem;
+}
+
 .experience-card .resume-item__note {
   color: #515d69;
+  font-size: 0.88rem;
   font-style: normal;
+  margin-bottom: 0.3rem;
 }
 
 .experience-card .resume-item__period {
-  white-space: normal;
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--resume-accent);
 }
 
+.experience-card .resume-item__list {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.experience-card .resume-item__list li {
+  margin-bottom: 0.25rem;
+}
+
+/* ── Dark mode ── */
+html[data-theme="dark"] .experience-card {
+  background: var(--global-bg-color, #1a1a2e);
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  border-left-color: #4a90d9;
+}
 html[data-theme="dark"] .experience-card .resume-card__label {
-  padding: 0.35rem 0.6rem;
-  border-radius: 4px;
-  background: #e8eff6;
+  color: #7eb8f7;
 }
-
+html[data-theme="dark"] .experience-card .resume-card__rule {
+  border-top-color: #333;
+}
+html[data-theme="dark"] .experience-card .resume-item {
+  border-left-color: #333;
+}
+html[data-theme="dark"] .experience-card .resume-item__title {
+  color: var(--global-text-color, #e0e0e0);
+}
 html[data-theme="dark"] .experience-card .resume-item__meta,
 html[data-theme="dark"] .experience-card .resume-item__note {
-  color: #d4dce4;
+  color: #a8b8c8;
+}
+html[data-theme="dark"] .experience-card .resume-item__period {
+  color: #7eb8f7;
 }
 
 @media (max-width: 600px) {
+  .experience-card {
+    padding: 0.8rem 1rem;
+  }
   .experience-card .resume-item__meta {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .experience-card .resume-item__period {
     margin-left: 0;
     text-align: left;
   }
 }
 </style>
+

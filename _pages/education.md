@@ -6,234 +6,285 @@ author_profile: true
 ---
 
 <div class="education-page">
-  <section class="education-degree" aria-labelledby="masters-degree">
-    <h2 id="masters-degree" class="education-degree__title">M.Sc. (Engineering) in Computer Science and Engineering</h2>
-    <p class="education-degree__university">Hajee Mohammad Danesh Science and Technology University</p>
-    <p class="education-degree__location">Dinajpur, Bangladesh</p>
-    <div class="education-degree__dates">
-      <p><time datetime="2025-01">Jan 2025</time> &ndash; Present</p>
-      <span class="education-degree__status">Expected <time datetime="2026-12">Dec 2026</time></span>
+
+  <div class="edu-card">
+    <div class="edu-card__body">
+      <h2 class="edu-card__title">M.Sc. (Engineering) in Computer Science and Engineering</h2>
+      <p class="edu-card__university">Hajee Mohammad Danesh Science and Technology University</p>
+      <p class="edu-card__location">Dinajpur, Bangladesh</p>
+      <div class="edu-card__dates">
+        <span class="edu-card__period"><time datetime="2025-01">Jan 2025</time> &ndash; Present</span>
+        <span class="edu-card__status edu-card__status--active">Expected <time datetime="2026-12">Dec 2026</time></span>
+      </div>
+
+      <div class="edu-card__research">
+        <h3>Research Focus</h3>
+        <p>Self-supervised contrastive and masked representation learning for reliable arrhythmia classification from noisy multi-lead ECG signals.</p>
+      </div>
+
+      <dl class="edu-card__details">
+        <div class="edu-card__detail-row">
+          <dt>Supervisor</dt>
+          <dd><a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></dd>
+        </div>
+        <div class="edu-card__detail-row">
+          <dt>Assistantship</dt>
+          <dd>Graduate Research Assistant, 2025&ndash;2026</dd>
+        </div>
+        <div class="edu-card__detail-row">
+          <dt>CGPA</dt>
+          <dd><strong>3.65</strong> / 4.00 <span class="edu-card__context">(through the final semester)</span></dd>
+        </div>
+      </dl>
     </div>
+  </div>
 
-    <div class="education-degree__research">
-      <h3>Research focus</h3>
-      <p>Self-supervised contrastive and masked representation learning for reliable arrhythmia classification from noisy multi-lead ECG signals.</p>
+  <div class="edu-card">
+    <div class="edu-card__body">
+      <h2 class="edu-card__title">B.Sc. (Engineering) in Electrical and Electronic Engineering</h2>
+      <p class="edu-card__university">Hajee Mohammad Danesh Science and Technology University</p>
+      <p class="edu-card__location">Dinajpur, Bangladesh</p>
+      <div class="edu-card__dates">
+        <span class="edu-card__period"><time datetime="2015">2015</time> &ndash; <time datetime="2019-12">Dec 2019</time></span>
+        <span class="edu-card__status edu-card__status--done">Completed</span>
+      </div>
+
+      <dl class="edu-card__details">
+        <div class="edu-card__detail-row">
+          <dt>Parallel Degree</dt>
+          <dd>Completed the Computer Science and Engineering degree alongside the Electrical and Electronic Engineering degree.</dd>
+        </div>
+        <div class="edu-card__detail-row">
+          <dt>CGPA</dt>
+          <dd><strong>2.92</strong> / 4.00</dd>
+        </div>
+      </dl>
     </div>
+  </div>
 
-    <dl class="education-degree__details">
-      <dt>Supervisor</dt>
-      <dd><a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></dd>
-      <dt>Assistantship</dt>
-      <dd>Graduate Research Assistant, 2025&ndash;2026</dd>
-      <dt>CGPA</dt>
-      <dd>3.65 / 4.00 <span class="education-degree__context">(through the final semester)</span></dd>
-    </dl>
-  </section>
-
-  <section class="education-degree" aria-labelledby="bachelors-degree">
-    <h2 id="bachelors-degree" class="education-degree__title">B.Sc. (Engineering) in Electrical and Electronic Engineering</h2>
-    <p class="education-degree__university">Hajee Mohammad Danesh Science and Technology University</p>
-    <p class="education-degree__location">Dinajpur, Bangladesh</p>
-    <div class="education-degree__dates">
-      <p><time datetime="2015">2015</time> &ndash; <time datetime="2019-12">Dec 2019</time></p>
-      <span class="education-degree__status">Completed</span>
-    </div>
-
-    <dl class="education-degree__details">
-      <dt>Parallel degree</dt>
-      <dd>Completed the Computer Science and Engineering degree alongside the Electrical and Electronic Engineering degree.</dd>
-      <dt>CGPA</dt>
-      <dd>2.92 / 4.00</dd>
-    </dl>
-  </section>
-
-  <nav class="education-links" aria-label="Related academic information">
+  <nav class="edu-links" aria-label="Related academic information">
     <a href="{{ '/publications/' | relative_url }}">View research <span aria-hidden="true">&rarr;</span></a>
     <a href="{{ '/pdf/cv_bipul_islam.pdf' | relative_url }}" download>Download CV (PDF)</a>
   </nav>
+
 </div>
 
 <style>
-/* These styles apply only to the Education page content. */
+/* ── Education page styles ── */
 .education-page {
-  --education-accent: rgb(0, 76, 153);
-  --education-muted: #515d69;
-  --education-tint: #f2f6fa;
-  margin: 1.5rem 0;
-  padding: 1.75rem;
-  border: 1px solid var(--global-border-color);
-  border-radius: 12px;
-  background: var(--global-bg-color);
-  color: var(--global-text-color);
+  --edu-accent: rgb(0, 76, 153);
+  --edu-muted: #515d69;
+  --edu-tint: #f2f6fa;
+  margin: 1rem 0;
+}
+
+.edu-card {
+  margin-bottom: 1.5rem;
+  padding: 1.3rem 1.4rem;
+  border-left: 3px solid var(--edu-accent);
+  border-radius: 6px;
+  background: var(--global-bg-color, #fff);
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  transition: box-shadow .2s ease;
+}
+.edu-card:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,.1);
+}
+
+.edu-card__title {
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--global-text-color, #222);
+}
+
+.edu-card__university {
+  margin: 0;
+  font-weight: 600;
   font-size: 0.95rem;
+}
+
+.edu-card__location {
+  margin: 0.1rem 0 0;
+  color: var(--edu-muted);
+  font-size: 0.9rem;
+}
+
+.edu-card__dates {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.7rem 0 1rem;
+}
+
+.edu-card__period {
+  color: var(--edu-muted);
+  font-size: 0.9rem;
+}
+
+.edu-card__status {
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.edu-card__status--active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.edu-card__status--done {
+  background: #e8eff6;
+  color: var(--edu-accent);
+}
+
+.edu-card__research {
+  margin: 0.8rem 0 1rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--edu-accent);
+  border-radius: 0 6px 6px 0;
+  background: var(--edu-tint);
+}
+
+.edu-card__research h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--edu-accent);
+}
+
+.edu-card__research p {
+  margin: 0;
+  font-size: 0.92rem;
   line-height: 1.6;
-  overflow-wrap: anywhere;
 }
 
-.education-page ::selection {
-  background: var(--education-accent);
-  color: #fff;
+.edu-card__details {
+  margin: 0.8rem 0 0;
+  padding: 0;
 }
 
-.education-page a,
-.education-page a:visited {
-  color: var(--education-accent);
+.edu-card__detail-row {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.edu-card__detail-row:last-child {
+  border-bottom: none;
+}
+
+.edu-card__details dt {
+  flex: 0 0 auto;
+  min-width: 120px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--edu-muted);
+}
+
+.edu-card__details dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.edu-card__details dd a {
+  color: var(--edu-accent);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
-
-.education-page a:hover {
-  color: var(--education-accent);
+.edu-card__details dd a:hover {
   text-decoration-thickness: 2px;
 }
 
-.education-page a:focus-visible {
-  outline: 2px solid var(--education-accent);
-  outline-offset: 3px;
-  box-shadow: 0 0 0 5px #fff;
-  border-radius: 2px;
+.edu-card__context {
+  color: var(--edu-muted);
+  font-size: 0.88em;
 }
 
-.education-page .education-degree + .education-degree {
-  margin-top: 1.75rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid var(--global-border-color);
-}
-
-.education-page .education-degree__title {
-  margin: 0 0 0.65rem;
-  font-size: 1.15rem;
-  line-height: 1.4;
-}
-
-.education-page .education-degree__university {
-  margin: 0;
-  font-weight: 600;
-}
-
-.education-page .education-degree__location {
-  margin: 0.15rem 0 0;
-  color: var(--education-muted);
-}
-
-.education-page .education-degree__dates {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.8rem;
-  margin: 0.65rem 0 1.1rem;
-  color: var(--education-muted);
-  font-size: 0.9rem;
-}
-
-.education-page .education-degree__dates p {
-  margin: 0;
-}
-
-.education-page .education-degree__status {
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  background: #e8eff6;
-  color: var(--education-accent);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.education-page .education-degree__research {
-  margin: 1.1rem 0;
-  padding: 0.9rem 1rem;
-  border-left: 3px solid var(--education-accent);
-  border-radius: 0 6px 6px 0;
-  background: var(--education-tint);
-}
-
-.education-page .education-degree__research h3 {
-  margin: 0 0 0.35rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.education-page .education-degree__research p {
-  margin: 0;
-}
-
-.education-page .education-degree__details {
-  display: grid;
-  grid-template-columns: max-content minmax(0, 1fr);
-  gap: 0.55rem 1rem;
-  margin: 1rem 0 0;
-}
-
-.education-page .education-degree__details dt {
-  margin: 0;
-  font-weight: 600;
-}
-
-.education-page .education-degree__details dd {
-  margin: 0;
-}
-
-.education-page .education-degree__context {
-  color: var(--education-muted);
-}
-
-.education-page .education-links {
+.edu-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
-  margin-top: 1.75rem;
-  padding-top: 1.1rem;
-  border-top: 1px solid var(--global-border-color);
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-border-color, #e0e0e0);
 }
 
-.education-page .education-links a {
+.edu-links a {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  min-height: 44px;
+  gap: 0.3rem;
   font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--edu-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.edu-links a:hover {
+  text-decoration-thickness: 2px;
 }
 
+/* ── Dark mode ── */
 html[data-theme="dark"] .education-page {
-  --education-muted: #d4dce4;
-  --education-tint: #383e45;
+  --edu-muted: #a8b8c8;
+  --edu-tint: #2a2f36;
 }
-
-/* A light backing keeps the requested navy link color readable in dark mode. */
-html[data-theme="dark"] .education-page a {
-  padding: 0.1em 0.3em;
-  border-radius: 3px;
-  background: #e8eff6;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+html[data-theme="dark"] .edu-card {
+  background: var(--global-bg-color, #1a1a2e);
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  border-left-color: #4a90d9;
+}
+html[data-theme="dark"] .edu-card__title {
+  color: var(--global-text-color, #e0e0e0);
+}
+html[data-theme="dark"] .edu-card__status--active {
+  background: #1b4332;
+  color: #81c784;
+}
+html[data-theme="dark"] .edu-card__status--done {
+  background: #1e3a5f;
+  color: #7eb8f7;
+}
+html[data-theme="dark"] .edu-card__research {
+  border-left-color: #4a90d9;
+}
+html[data-theme="dark"] .edu-card__research h3 {
+  color: #7eb8f7;
+}
+html[data-theme="dark"] .edu-card__detail-row {
+  border-bottom-color: rgba(255,255,255,.06);
+}
+html[data-theme="dark"] .edu-card__details dd a,
+html[data-theme="dark"] .edu-links a {
+  color: #7eb8f7;
+}
+html[data-theme="dark"] .edu-links {
+  border-top-color: #333;
 }
 
 @media (max-width: 600px) {
-  .education-page {
-    padding: 1.15rem 1rem;
+  .edu-card {
+    padding: 0.9rem 1rem;
   }
-
-  .education-page .education-degree__title {
-    font-size: 1.05rem;
+  .edu-card__title {
+    font-size: 1rem;
   }
-
-  .education-page .education-degree__dates {
-    align-items: flex-start;
+  .edu-card__dates {
     flex-direction: column;
+    align-items: flex-start;
   }
-
-  .education-page .education-degree__details {
-    grid-template-columns: minmax(0, 1fr);
+  .edu-card__detail-row {
+    flex-direction: column;
     gap: 0.15rem;
   }
-
-  .education-page .education-degree__details dd + dt {
-    margin-top: 0.65rem;
+  .edu-card__details dt {
+    min-width: auto;
   }
-
-  .education-page .education-links {
-    align-items: flex-start;
+  .edu-links {
     flex-direction: column;
   }
 }

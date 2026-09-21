@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! This is **Md. Bipul Islam** — you can call me **Bipul**.
 
-I am currently pursuing my **M.Sc. in Computer Science and Engineering** at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Dinajpur, Bangladesh (expected December 2026), working under the supervision of **Dr. Ashis Kumar Mandal**. I have maintained a CGPA of **3.65/4.00** through my final semester.
+I am currently pursuing a research-based full-time **M.Sc. in Computer Science and Engineering** at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Dinajpur, Bangladesh (expect to be graduated in December 2026), working under the supervision of **Dr. Ashis Kumar Mandal**. I have maintained a CGPA of **3.65/4.00** through my final semester.
 
 I earned my **B.Sc. in Electrical and Electronic Engineering** from the same university in December 2019. Driven by a passion for programming, I pursued computer science coursework alongside my electrical engineering studies, building a strong foundation across both domains.
 
@@ -18,11 +18,10 @@ My research spans **Artificial Intelligence** and **Machine Learning**, with par
 ## Research Interests
 
 - **AI in Healthcare** — Clinical Prediction, Healthcare Utilization & Cost Modeling, Explainable Medical AI
-- **Bioinformatics** — Genomic Data Analysis, Computational Biology, Sequence Modeling
-- **Cybersecurity & CPS Security** — Intrusion Detection, Cyber-Physical System Resilience, Threat Intelligence
 - **Machine Learning & Pattern Recognition** — Deep Learning, Transfer Learning, Feature Engineering
 - **Computer Vision** — Image Processing & Analysis, Object Detection & Recognition
 - **Natural Language Processing** — Large Language Models (LLMs), Sentiment Analysis
+- **Cybersecurity & CPS Security** — Intrusion Detection, Cyber-Physical System Resilience, Threat Intelligence
 
 <section class="home-news" aria-labelledby="news-heading">
   <h2 id="news-heading" class="home-news__title">News</h2>
