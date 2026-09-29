@@ -7,21 +7,23 @@ redirect_from:
   - /about.html
 ---
 
-Hello! This is **Md. Bipul Islam** — you can call me **Bipul**.
+<div class="phd-banner">
+  <span class="phd-banner__icon">🎓</span>
+  <span class="phd-banner__text">Prospective PhD Student &mdash; Fall 2027</span>
+</div>
 
-I am currently pursuing a research-based full-time **M.Sc. in Computer Science and Engineering** at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Dinajpur, Bangladesh (expect to be graduated in December 2026), working under the supervision of **Dr. Ashis Kumar Mandal**. I have maintained a CGPA of **3.65/4.00** through my final semester.
+I am a graduate researcher at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Bangladesh, working on **reliable and interpretable AI for healthcare** — specifically self-supervised representation learning for ECG analysis and explainable clinical prediction models. I am pursuing a research-based **M.Sc. in Computer Science and Engineering** (expected December 2026) under the supervision of [Dr. Ashis Kumar Mandal](https://hstu.ac.bd/teacher/ashis){:target="_blank" rel="noopener noreferrer"}, maintaining a CGPA of **3.65/4.00**.
 
-I earned my **B.Sc. in Electrical and Electronic Engineering** from the same university in December 2019. Driven by a passion for programming, I pursued computer science coursework alongside my electrical engineering studies, building a strong foundation across both domains.
-
-My research spans **Artificial Intelligence** and **Machine Learning**, with particular focus on **Pattern Recognition**, **Deep Learning**, **Computer Vision**, **Natural Language Processing**, and **Large Language Models (LLMs)**. I am especially driven by **AI in healthcare** — developing interpretable, trustworthy models for clinical prediction, healthcare utilization and cost forecasting, and public-health decision-making. My interdisciplinary background in electrical engineering helps me develop novel solutions by hybridizing techniques across domains, with an emphasis on ethical research that bridges theory and practical AI applications.
+I am seeking a **PhD position in Computer Science** to advance trustworthy machine learning methods for clinical decision support, with a focus on building models that are not only accurate but also robust, interpretable, and safe for real-world deployment.
 
 ## Research Interests
 
-- **AI in Healthcare** — Clinical Prediction, Healthcare Utilization & Cost Modeling, Explainable Medical AI
-- **Machine Learning & Pattern Recognition** — Deep Learning, Transfer Learning, Feature Engineering
-- **Computer Vision** — Image Processing & Analysis, Object Detection & Recognition
-- **Natural Language Processing** — Large Language Models (LLMs), Sentiment Analysis
-- **Cybersecurity & CPS Security** — Intrusion Detection, Cyber-Physical System Resilience, Threat Intelligence
+**Primary:**
+- **Trustworthy AI for Healthcare** — Clinical Prediction, Explainable Medical AI, Healthcare Utilization & Cost Modeling
+- **Reliable Machine Learning** — Self-Supervised Learning, Uncertainty Quantification, Robustness Under Distribution Shift
+
+**Broader Interests:**
+- Computer Vision, Natural Language Processing, Deep Learning, Transfer Learning
 
 <section class="home-news" aria-labelledby="news-heading">
   <h2 id="news-heading" class="home-news__title">News</h2>
@@ -34,9 +36,42 @@ My research spans **Artificial Intelligence** and **Machine Learning**, with par
   </ul>
 </section>
 
+<section class="home-mentors" aria-labelledby="mentors-heading">
+  <h2 id="mentors-heading" class="home-news__title">Mentors &amp; Collaborators</h2>
+  <ul class="home-news__list">
+    <li><a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer"><strong>Dr. Ashis Kumar Mandal</strong></a> — Associate Professor, CSE, HSTU (M.Sc. Thesis Supervisor)</li>
+  </ul>
+</section>
+
 <style>
+/* ── PhD banner ── */
+.phd-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%);
+  border: 1px solid #a5d6a7;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1b5e20;
+  letter-spacing: 0.01em;
+}
+.phd-banner__icon {
+  font-size: 1.1rem;
+}
+
+html[data-theme="dark"] .phd-banner {
+  background: linear-gradient(135deg, #1b4332 0%, #1e3a5f 100%);
+  border-color: #2e7d32;
+  color: #81c784;
+}
+
 /* Compact news list, scoped to the home/about page. */
-.home-news {
+.home-news,
+.home-mentors {
   margin-top: 2rem;
   font-family: inherit;
   font-size: 0.95rem;
@@ -44,7 +79,8 @@ My research spans **Artificial Intelligence** and **Machine Learning**, with par
   overflow-wrap: anywhere;
 }
 
-.home-news .home-news__title {
+.home-news .home-news__title,
+.home-mentors .home-news__title {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -59,26 +95,34 @@ My research spans **Artificial Intelligence** and **Machine Learning**, with par
   text-transform: uppercase;
 }
 
-.home-news .home-news__list {
+.home-news .home-news__list,
+.home-mentors .home-news__list {
   margin: 0;
   padding-left: 1.1rem;
   list-style-type: disc;
 }
 
-.home-news .home-news__list li {
+.home-news .home-news__list li,
+.home-mentors .home-news__list li {
   margin: 0.15rem 0;
 }
 
 .home-news a,
 .home-news a:visited,
 .home-news a:hover,
-.home-news a:active {
+.home-news a:active,
+.home-mentors a,
+.home-mentors a:visited,
+.home-mentors a:hover,
+.home-mentors a:active {
   color: #2980b9;
   text-decoration: none;
 }
 
 .home-news a:hover,
-.home-news a:focus-visible {
+.home-news a:focus-visible,
+.home-mentors a:hover,
+.home-mentors a:focus-visible {
   text-decoration: underline;
 }
 </style>

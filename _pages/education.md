@@ -63,7 +63,7 @@ author_profile: true
   </div>
 
   <nav class="edu-links" aria-label="Related academic information">
-    <a href="{{ '/publications/' | relative_url }}">View research <span aria-hidden="true">&rarr;</span></a>
+    <a href="{{ '/research/' | relative_url }}">View research <span aria-hidden="true">&rarr;</span></a>
     <a href="{{ '/pdf/cv_bipul_islam.pdf' | relative_url }}" download>Download CV (PDF)</a>
   </nav>
 
