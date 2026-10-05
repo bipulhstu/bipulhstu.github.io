@@ -59,7 +59,7 @@
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if site.og_image %}
-      <meta name="twitter:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
+      <meta name="twitter:image" content="{{ site.og_image | prepend: "/img/" | prepend: base_path }}">
     {% endif %}
   {% endif %}
 
@@ -118,10 +118,13 @@
 {% if page.date %}
   <meta property="og:type" content="article">
 {% endif %}
-{% if page.excerpt %}
+{% if seo_description %}
   <meta property="og:description" name="description" content="{{ seo_description }}">
 {% elsif site.og_description %}
   <meta property="og:description" name="description" content="{{ site.og_description }}">
+{% endif %}
+{% if site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | prepend: "/img/" | prepend: base_path }}">
 {% endif %}
 {% if seo_url %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
@@ -133,7 +136,7 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": {{ seo_url | jsonify }},
-      "logo": {{ site.og_image | prepend: "/images/" | prepend: base_path | jsonify }}
+      "logo": {{ site.og_image | prepend: "/img/" | prepend: base_path | jsonify }}
     }
   </script>
 {% endif %}

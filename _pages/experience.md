@@ -1,4 +1,5 @@
 ---
+description: "Research, teaching, and industry experience of Md. Bipul Islam."
 layout: archive
 title: "Experience"
 permalink: /experience/
@@ -194,7 +195,8 @@ html[data-theme="dark"] .experience-card .resume-item__meta,
 html[data-theme="dark"] .experience-card .resume-item__note {
   color: #a8b8c8;
 }
-html[data-theme="dark"] .experience-card .resume-item__period {
+html[data-theme="dark"] .experience-card .resume-item__period,
+html[data-theme="dark"] .experience-card a {
   color: #7eb8f7;
 }
 

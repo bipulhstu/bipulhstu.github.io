@@ -1,4 +1,5 @@
 ---
+description: "Research statement and projects of Md. Bipul Islam: self-supervised ECG representation learning, explainable clinical prediction, and uncertainty-aware medical imaging."
 layout: archive
 title: "Research"
 permalink: /research/
@@ -67,7 +68,7 @@ author_profile: true
       </p>
       <div class="research-card__content">
         <p><strong>Motivation:</strong> Predictive models for clinical risk assessment often sacrifice interpretability for accuracy. In healthcare, understanding <em>why</em> a model predicts high risk is as important as the prediction itself.</p>
-        <p><strong>Approach:</strong> We integrate physics-informed constraints into neural network architectures for tabular medical data, producing models that respect known clinical relationships while providing voxel-level and feature-level explanations for their predictions.</p>
+        <p><strong>Approach:</strong> We integrate physics-informed constraints into neural network architectures for tabular medical data, producing models that respect known clinical relationships while providing feature-level explanations for their predictions.</p>
         <p><strong>Key contributions:</strong></p>
         <ul>
           <li>Physics-informed regularization adapted for multi-condition medical tabular data</li>

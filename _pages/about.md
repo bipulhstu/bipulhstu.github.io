@@ -1,4 +1,5 @@
 ---
+description: "Md. Bipul Islam — M.Sc. CSE researcher at HSTU, Bangladesh, working on reliable and interpretable AI for healthcare. Seeking a PhD in Computer Science (Fall 2027)."
 permalink: /
 title: "About me"
 author_profile: true
@@ -39,7 +40,7 @@ I am seeking a **PhD position in Computer Science** to advance trustworthy machi
 <section class="home-mentors" aria-labelledby="mentors-heading">
   <h2 id="mentors-heading" class="home-news__title">Mentors &amp; Collaborators</h2>
   <ul class="home-news__list">
-    <li><a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer"><strong>Dr. Ashis Kumar Mandal</strong></a> — Associate Professor, CSE, HSTU (M.Sc. Thesis Supervisor)</li>
+    <li><a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer"><strong>Dr. Ashis Kumar Mandal</strong></a> — Professor, CSE, HSTU (M.Sc. Thesis Supervisor)</li>
   </ul>
 </section>
 
@@ -124,5 +125,10 @@ html[data-theme="dark"] .phd-banner {
 .home-mentors a:hover,
 .home-mentors a:focus-visible {
   text-decoration: underline;
+}
+
+html[data-theme="dark"] .home-news a,
+html[data-theme="dark"] .home-mentors a {
+  color: #7eb8f7;
 }
 </style>
