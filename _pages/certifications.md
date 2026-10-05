@@ -52,22 +52,15 @@ author_profile: true
     <img src="/img/certificates/ai_fundamentals_certificate.jpg" alt="AI Fundamentals" loading="lazy">
     <span class="cert-item__caption">AI Fundamentals</span>
   </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/ibm_python_py010en_certificate.jpg" data-cert-caption="Python 101 for Data Science (IBM)" data-cert-verify="https://courses.cognitiveclass.ai/certificates/72380d981e2242b898ac23833f0f5591">
+    <img src="/img/certificates/ibm_python_py010en_certificate.jpg" alt="Python 101 for Data Science (IBM)" loading="lazy">
+    <span class="cert-item__caption">Python 101 for Data Science (IBM)</span>
+  </button>
   <button type="button" class="cert-item" data-cert-full="/img/certificates/data_structures_and_algorithms.jpg" data-cert-caption="Data Structures and Algorithms">
     <img src="/img/certificates/data_structures_and_algorithms.jpg" alt="Data Structures and Algorithms" loading="lazy">
     <span class="cert-item__caption">Data Structures and Algorithms</span>
   </button>
 </div>
-
-<h2>Audited Coursework</h2>
-<p class="cert-audit-note">Courses I completed by auditing &mdash; studying the full course content without purchasing a certificate.</p>
-<ul class="cert-audit-list">
-  <li>Deep Learning Specialization <span>(Coursera &ndash; DeepLearning.AI)</span></li>
-  <li>Machine Learning Specialization <span>(Coursera &ndash; Stanford University / DeepLearning.AI)</span></li>
-  <li>IBM Machine Learning Professional Certificate <span>(Coursera)</span></li>
-  <li>AI for Healthcare <span>(Coursera)</span></li>
-  <li>Machine Learning Scientist in Python <span>(DataCamp)</span></li>
-  <li>Data Scientist Certification <span>(DataCamp)</span></li>
-</ul>
 
 <h2>Test Scores</h2>
 <div class="cert-grid">
@@ -121,10 +114,6 @@ author_profile: true
 .cert-grid--list .cert-item__caption{font-size:.95rem;text-align:left;flex:1;color:var(--global-text-color);}
 .cert-grid--list .cert-item::after{content:"\f06e";font-family:"Font Awesome 6 Free";font-weight:900;
   margin-left:auto;color:var(--global-text-color-light);opacity:.55;font-size:.85rem;}
-
-.cert-audit-note{color:var(--global-text-color-light);font-size:.92rem;margin-bottom:.5rem;}
-.cert-audit-list{margin:0 0 2rem;padding-left:1.3rem;line-height:1.7;}
-.cert-audit-list span{color:var(--global-text-color-light);}
 
 .cert-modal{position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;padding:2vh 2vw;}
 .cert-modal[hidden]{display:none;}

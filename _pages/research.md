@@ -24,7 +24,6 @@ author_profile: true
       <h3 class="research-card__title">Self-Supervised ECG Representation Learning for Reliable Arrhythmia Classification</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Lead Researcher</span>
-        <span class="research-card__period">Jan 2025 &ndash; Present</span>
       </p>
       <p class="research-card__supervisor">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
       <div class="research-card__content">
@@ -44,7 +43,6 @@ author_profile: true
       <h3 class="research-card__title">AI-Based Potato Leaf Disease Detection with Farmer Guidance</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Lead Researcher</span>
-        <span class="research-card__period">2025 &ndash; Present</span>
       </p>
       <p class="research-card__supervisor">Funded by: Government of Bangladesh</p>
       <div class="research-card__content">
@@ -64,7 +62,6 @@ author_profile: true
       <h3 class="research-card__title">Explainable Physics-Informed Neural Networks for Health Risk Prediction</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Lead Researcher</span>
-        <span class="research-card__period">2025 &ndash; Present</span>
       </p>
       <div class="research-card__content">
         <p><strong>Motivation:</strong> Predictive models for clinical risk assessment often sacrifice interpretability for accuracy. In healthcare, understanding <em>why</em> a model predicts high risk is as important as the prediction itself.</p>
@@ -83,7 +80,6 @@ author_profile: true
       <h3 class="research-card__title">Interpretable Brain Tumor Segmentation with Uncertainty Quantification</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Co-Investigator</span>
-        <span class="research-card__period">2025 &ndash; Present</span>
       </p>
       <div class="research-card__content">
         <p><strong>Motivation:</strong> Accurate brain tumor segmentation from multi-modal MRI is critical for surgical planning, yet existing models lack uncertainty estimates that clinicians need to assess prediction reliability.</p>
