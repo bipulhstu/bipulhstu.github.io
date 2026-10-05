@@ -16,9 +16,21 @@ author_profile: true
   </div>
 </div>
 <div class="cert-grid">
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/ai_for_medicine_specialization.png" data-cert-caption="AI for Medicine Specialization (DeepLearning.AI)" data-cert-verify="https://www.coursera.org/account/accomplishments/specialization/0PMVRMCVVD38">
+    <img src="/img/certificates/coursera/ai_for_medicine_specialization.png" alt="AI for Medicine Specialization (DeepLearning.AI)" loading="lazy">
+    <span class="cert-item__caption">AI for Medicine Specialization (DeepLearning.AI)</span>
+  </button>
   <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/ai_for_medical_diagnosis.png" data-cert-caption="AI for Medical Diagnosis" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/AISJCIZMSAWF">
     <img src="/img/certificates/coursera/ai_for_medical_diagnosis.png" alt="AI for Medical Diagnosis" loading="lazy">
     <span class="cert-item__caption">AI for Medical Diagnosis</span>
+  </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/ai_for_medical_prognosis.png" data-cert-caption="AI for Medical Prognosis" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/81EW7SPQ16Z3">
+    <img src="/img/certificates/coursera/ai_for_medical_prognosis.png" alt="AI for Medical Prognosis" loading="lazy">
+    <span class="cert-item__caption">AI for Medical Prognosis</span>
+  </button>
+  <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/ai_for_medical_treatment.png" data-cert-caption="AI for Medical Treatment" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/3CRZP34M9TU8">
+    <img src="/img/certificates/coursera/ai_for_medical_treatment.png" alt="AI for Medical Treatment" loading="lazy">
+    <span class="cert-item__caption">AI for Medical Treatment</span>
   </button>
   <button type="button" class="cert-item" data-cert-full="/img/certificates/coursera/supervised_machine_learning.png" data-cert-caption="Supervised Machine Learning: Regression and Classification" data-cert-verify="https://www.coursera.org/account/accomplishments/verify/IVU9O48A4A3Z">
     <img src="/img/certificates/coursera/supervised_machine_learning.png" alt="Supervised Machine Learning: Regression and Classification" loading="lazy">
