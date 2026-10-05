@@ -1,4 +1,5 @@
 ---
+description: "Curriculum vitae of Md. Bipul Islam (PDF)."
 layout: archive
 title: "Curriculum Vitae"
 permalink: /cv/
@@ -14,3 +15,5 @@ redirect_from:
 </div>
 
 <embed class="cv-embed" src="{{ site.baseurl }}/pdf/cv_bipul_islam.pdf" width="100%" height="800" type="application/pdf">
+
+<p class="cv-fallback">PDF not showing (e.g. on a phone)? <a href="{{ site.baseurl }}/pdf/cv_bipul_islam.pdf" target="_blank" rel="noopener noreferrer">Open the CV as a PDF</a>.</p>

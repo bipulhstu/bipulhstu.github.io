@@ -1,4 +1,5 @@
 ---
+description: "Education of Md. Bipul Islam: M.Sc. in Computer Science and Engineering and B.Sc. in Electrical and Electronic Engineering, HSTU, Bangladesh."
 layout: archive
 title: "Education"
 permalink: /education/
@@ -51,8 +52,8 @@ author_profile: true
 
       <dl class="edu-card__details">
         <div class="edu-card__detail-row">
-          <dt>Parallel Degree</dt>
-          <dd>Completed the Computer Science and Engineering degree alongside the Electrical and Electronic Engineering degree.</dd>
+          <dt>Additional Coursework</dt>
+          <dd>Completed additional coursework in Computer Science and Engineering.</dd>
         </div>
         <div class="edu-card__detail-row">
           <dt>CGPA</dt>
