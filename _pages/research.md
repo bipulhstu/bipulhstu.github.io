@@ -1,5 +1,5 @@
 ---
-description: "Research statement and projects of Md. Bipul Islam: self-supervised ECG representation learning, explainable clinical prediction, and uncertainty-aware medical imaging."
+description: "Research statement and projects of Md. Bipul Islam: reliability of self-supervised ECG models, explainable clinical prediction, and uncertainty-aware medical imaging."
 layout: archive
 title: "Research"
 permalink: /research/
@@ -12,7 +12,7 @@ author_profile: true
     <h2 class="research-section__title">Research Statement</h2>
     <hr class="research-section__rule">
     <p>My research focuses on developing <strong>reliable, interpretable, and trustworthy AI systems for healthcare applications</strong>. I am motivated by the gap between high-performing deep learning models and their safe deployment in clinical settings — where noisy data, distribution shifts, and the need for human understanding of model decisions present fundamental challenges.</p>
-    <p>Currently, I investigate <strong>self-supervised representation learning</strong> to build robust ECG classifiers that maintain accuracy under real-world noise conditions, and <strong>explainable neural architectures</strong> that provide clinically meaningful explanations for their predictions. My work bridges signal processing, deep learning, and clinical informatics, with an emphasis on methods that generalize across patient populations and healthcare systems.</p>
+    <p>Currently, I study whether <strong>self-supervised representation learning</strong> makes ECG classifiers reliable &mdash; not only accurate, but robust to noise, missing leads, and data from new hospitals, with <strong>calibrated confidence</strong> and <strong>faithful, stable explanations</strong>. My work bridges signal processing, deep learning, and clinical informatics, with an emphasis on rigorous evaluation of how models behave when deployment conditions differ from training conditions.</p>
     <p>I am seeking a <strong>PhD position (Fall 2027)</strong> to deepen this research agenda — developing ML methods that are not only accurate but also robust, interpretable, and safe for deployment in high-stakes medical decision-making.</p>
   </div>
 
@@ -21,21 +21,22 @@ author_profile: true
     <hr class="research-section__rule">
 
     <div class="research-card">
-      <h3 class="research-card__title">Self-Supervised ECG Representation Learning for Reliable Arrhythmia Classification</h3>
+      <h3 class="research-card__title">Beyond Accuracy: Calibration and Explanation Reliability of Self-Supervised ECG Models for Arrhythmia Classification</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Lead Researcher</span>
       </p>
       <p class="research-card__supervisor">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
       <div class="research-card__content">
-        <p><strong>Motivation:</strong> Clinical ECG recordings are inherently noisy due to electrode artifacts, patient movement, and device variability. Standard supervised classifiers degrade significantly under these conditions, limiting their real-world reliability.</p>
-        <p><strong>Approach:</strong> We develop a self-supervised pretraining framework combining <em>contrastive learning</em> and <em>masked signal modeling</em> to learn robust ECG representations from unlabeled multi-lead recordings. The pretrained encoder is then fine-tuned for arrhythmia classification, with uncertainty quantification to flag unreliable predictions.</p>
-        <p><strong>Key contributions:</strong></p>
+        <p><strong>Motivation:</strong> Self-supervised ECG models are usually judged by accuracy on clean test data. Clinical use also needs predictions that stay accurate, honestly confident, and faithfully explained when signals are noisy, leads are missing, or the recordings come from a different hospital.</p>
+        <p><strong>Approach:</strong> Using the same 1-D CNN encoder, we compare supervised training with <em>contrastive</em>, <em>masked</em>, and <em>hybrid</em> self-supervised pretraining (unlabeled Chapman-Shaoxing/Ningbo ECGs), fine-tuned on PTB-XL with 10% and 100% of the labels. The models are stress-tested under recorded electrode-motion, muscle, and baseline-wander noise (MIT-BIH NSTDB), lead loss, and two external databases (CPSC2018, Georgia), measuring accuracy, calibration (class-wise ECE, temperature scaling), and Integrated-Gradients explanation faithfulness and stability, with patient-level bootstrap statistics.</p>
+        <p><strong>Key findings:</strong></p>
         <ul>
-          <li>Novel pretraining strategy that combines contrastive and generative objectives for multi-lead ECG signals</li>
-          <li>Systematic evaluation of robustness under synthetic and real-world noise conditions</li>
-          <li>Uncertainty-aware classification with calibrated confidence scores for clinical decision support</li>
+          <li>Masked pretraining generalized best to unseen hospitals, especially with 10% of the labels, but no self-supervised objective improved robustness to noise or missing leads</li>
+          <li>All models were well calibrated in distribution, but calibration error grew several-fold under dataset shift and lead loss, and temperature scaling did not repair it</li>
+          <li>The models most accurate under dataset shift had the least stable explanations: no objective was best on every reliability axis</li>
+          <li>Fine-tuning on corrupted inputs removed most of the lead-loss failure without reducing clean accuracy</li>
         </ul>
-        <p class="research-card__status"><strong>Status:</strong> M.Sc. thesis research &mdash; manuscript in preparation for submission</p>
+        <p class="research-card__status"><strong>Status:</strong> M.Sc. thesis research &mdash; manuscript in preparation for journal submission</p>
       </div>
     </div>
 
