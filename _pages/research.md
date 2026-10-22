@@ -78,6 +78,25 @@ author_profile: true
     </div>
 
     <div class="research-card">
+      <h3 class="research-card__title">Explainable FT-Transformer for First-Trimester GDM Prediction with Multi-Level SHAP</h3>
+      <p class="research-card__meta">
+        <span class="research-card__role">Lead Researcher</span>
+      </p>
+      <div class="research-card__content">
+        <p><strong>Motivation:</strong> Gestational diabetes is usually diagnosed at 24&ndash;28 weeks, after much of the chance for early prevention has passed. Many machine-learning studies report near-perfect accuracy, but most use small single-hospital datasets, include late-pregnancy tests such as the glucose tolerance test, and are rarely validated on new data, so their real early-prediction value is unclear.</p>
+        <p><strong>Approach:</strong> Using 6.9 million US births (CDC NVSS natality data), we predict gestational diabetes from 24 variables available at or before the first trimester, train on 2023 and test once on the unseen 2024 cohort. An FT-Transformer is benchmarked against logistic regression, XGBoost, LightGBM, CatBoost, MLP, TabNet and TabPFN, with calibration, decision-curve and fairness analyses. Predictions are explained with SHAP at four levels &mdash; global, individual patient, exact pairwise interactions and population subgroups &mdash; and the explanations are cross-checked against a second model and against attention weights. We also audit a widely used public GDM dataset (3,525 records) with repeated nested cross-validation.</p>
+        <p><strong>Key findings:</strong></p>
+        <ul>
+          <li>Early prediction from routine first-trimester data reaches AUC 0.71 on the future-year test set; the FT-Transformer ties with gradient-boosted trees, so its value lies in transparent, calibrated risk estimates rather than higher accuracy</li>
+          <li>Maternal age and pre-pregnancy BMI drive most predictions, and the model relies on the same risk factors in every racial/ethnic and age group; feature interactions are small</li>
+          <li>SHAP explanations are stable and model-agnostic (rank agreement 0.96 with XGBoost), whereas transformer attention weights agree only partially and are not a reliable explanation</li>
+          <li>In the public benchmark dataset, the pattern of missing values alone predicts the diagnosis (AUC 0.98), showing that the near-perfect accuracies reported on it largely reflect how the data were collected</li>
+        </ul>
+        <p class="research-card__status"><strong>Status:</strong> Manuscript in preparation for journal submission</p>
+      </div>
+    </div>
+
+    <div class="research-card">
       <h3 class="research-card__title">Interpretable Brain Tumor Segmentation with Uncertainty Quantification</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Co-Investigator</span>
