@@ -13,7 +13,7 @@ redirect_from:
   <span class="phd-banner__text">Prospective PhD Student &mdash; Fall 2027</span>
 </div>
 
-I am a graduate researcher at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Bangladesh, working on **reliable and interpretable AI for healthcare** — specifically self-supervised representation learning for ECG analysis and explainable clinical prediction models. I am pursuing a research-based **M.Sc. in Computer Science and Engineering** (expected December 2026) under the supervision of [Dr. Ashis Kumar Mandal](https://hstu.ac.bd/teacher/ashis){:target="_blank" rel="noopener noreferrer"}, maintaining a CGPA of **3.65/4.00**.
+I am a graduate researcher at [Hajee Mohammad Danesh Science and Technology University (HSTU)](https://hstu.ac.bd/){:target="_blank" rel="noopener noreferrer"}, Bangladesh, working on **reliable and interpretable AI for healthcare** — specifically self-supervised representation learning for ECG analysis and explainable clinical prediction models. I am pursuing a research-based **M.Sc. in Computer Science and Engineering** (expected December 2026) under the supervision of [Dr. Ashis Kumar Mandal](https://hstu.ac.bd/teacher/ashis){:target="_blank" rel="noopener noreferrer"}, maintaining a CGPA of **3.67/4.00**.
 
 I am seeking a **PhD position in Computer Science** to advance trustworthy machine learning methods for clinical decision support, with a focus on building models that are not only accurate but also robust, interpretable, and safe for real-world deployment.
 

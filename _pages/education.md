@@ -15,7 +15,7 @@ author_profile: true
       <p class="edu-card__location">Dinajpur, Bangladesh</p>
       <div class="edu-card__dates">
         <span class="edu-card__period"><time datetime="2025-01">Jan 2025</time> &ndash; Present</span>
-        <span class="edu-card__status edu-card__status--active">Expected <time datetime="2026-12">Dec 2026</time></span>
+        <span class="edu-card__status edu-card__status--active">Expected to graduate in <time datetime="2026-12">Dec 2026</time></span>
       </div>
 
       <div class="edu-card__research">
@@ -34,7 +34,17 @@ author_profile: true
         </div>
         <div class="edu-card__detail-row">
           <dt>CGPA</dt>
-          <dd><strong>3.65</strong> / 4.00 <span class="edu-card__context">(through the final semester)</span></dd>
+          <dd><strong>3.67</strong> / 4.00 <span class="edu-card__context">(after 2 of 3 semesters; 30 of 40 credits earned)</span></dd>
+        </div>
+        <div class="edu-card__detail-row">
+          <dt>Semesters</dt>
+          <dd>Jul 2025 &ndash; Dec 2026 (3 semesters, including a research semester)</dd>
+        </div>
+        <div class="edu-card__detail-row">
+          <dt>Documents</dt>
+          <dd class="edu-card__docs">
+            <a href="{{ '/pdf/msc_unofficial_transcript_bipul_islam.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Unofficial Transcript (PDF)</a>
+          </dd>
         </div>
       </dl>
     </div>
@@ -58,6 +68,13 @@ author_profile: true
         <div class="edu-card__detail-row">
           <dt>CGPA</dt>
           <dd><strong>2.92</strong> / 4.00</dd>
+        </div>
+        <div class="edu-card__detail-row">
+          <dt>Documents</dt>
+          <dd class="edu-card__docs">
+            <a href="{{ '/pdf/bsc_transcript_bipul_islam.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Transcript (PDF)</a>
+            <a href="{{ '/pdf/bsc_certificate_bipul_islam.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Degree Certificate (PDF)</a>
+          </dd>
         </div>
       </dl>
     </div>
@@ -199,6 +216,12 @@ author_profile: true
 }
 .edu-card__details dd a:hover {
   text-decoration-thickness: 2px;
+}
+
+.edu-card__docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.2rem;
 }
 
 .edu-card__context {
