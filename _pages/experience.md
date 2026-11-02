@@ -1,5 +1,5 @@
 ---
-description: "Research, teaching, and industry experience of Md. Bipul Islam."
+description: "Research, teaching, and professional experience of Md. Bipul Islam."
 layout: archive
 title: "Experience"
 permalink: /experience/
@@ -61,7 +61,7 @@ author_profile: true
 </div>
 
 <div class="resume-card experience-card">
-  <h2 class="resume-card__label">Industry Experience</h2>
+  <h2 class="resume-card__label">Professional Experience</h2>
   <hr class="resume-card__rule">
 
   <div class="resume-item">
