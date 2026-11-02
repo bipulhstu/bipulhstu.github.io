@@ -23,7 +23,7 @@ author_profile: true
     <p class="resume-item__meta"><span class="resume-item__place">Computer Science Lab, Hajee Mohammad Danesh Science and Technology University (HSTU) <span class="sep">&bull;</span> Bangladesh</span><span class="resume-item__period">Jan 2025 &ndash; Present</span></p>
     <p class="resume-item__note">Supervisor: <a href="https://hstu.ac.bd/teacher/ashis" target="_blank" rel="noopener noreferrer">Dr. Ashis Kumar Mandal</a></p>
     <ul class="resume-item__list">
-      <li>Investigate self-supervised representation learning for arrhythmia classification from noisy ECG signals.</li>
+      <li>Evaluate whether contrastive, masked, and hybrid self-supervised ECG models stay accurate, well-calibrated, and faithfully explained for arrhythmia classification under noise, lead loss, and dataset shift.</li>
       <li>Lead research on automated potato leaf disease detection, funded by the Government of Bangladesh.</li>
     </ul>
   </div>

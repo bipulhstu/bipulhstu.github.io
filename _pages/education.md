@@ -19,8 +19,8 @@ author_profile: true
       </div>
 
       <div class="edu-card__research">
-        <h3>Research Focus</h3>
-        <p>Self-supervised contrastive and masked representation learning for reliable arrhythmia classification from noisy multi-lead ECG signals.</p>
+        <h3>Thesis Title</h3>
+        <p>Beyond Accuracy: Calibration and Explanation Reliability of Contrastive, Masked, and Hybrid Self-Supervised ECG Models for Arrhythmia Classification under Noise, Lead Loss, and Dataset Shift</p>
       </div>
 
       <dl class="edu-card__details">

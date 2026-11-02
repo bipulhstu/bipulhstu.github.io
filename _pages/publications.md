@@ -16,7 +16,7 @@ author_profile: true
 <ul class="pub-list">
   <li>
     <strong>Md. Bipul Islam</strong> and Ashis Kumar Mandal.
-    <span class="pub-title">Self-Supervised Contrastive and Masked Representation Learning for Reliable Arrhythmia Classification Using Noisy Multi-Lead ECG Signals</span>.
+    <span class="pub-title">Beyond Accuracy: Calibration and Explanation Reliability of Contrastive, Masked, and Hybrid Self-Supervised ECG Models for Arrhythmia Classification under Noise, Lead Loss, and Dataset Shift</span>.
     <em>M.Sc. thesis research &mdash; manuscript in preparation.</em>
   </li>
   <li>

@@ -21,7 +21,7 @@ author_profile: true
     <hr class="research-section__rule">
 
     <div class="research-card">
-      <h3 class="research-card__title">Beyond Accuracy: Calibration and Explanation Reliability of Self-Supervised ECG Models for Arrhythmia Classification</h3>
+      <h3 class="research-card__title">Beyond Accuracy: Calibration and Explanation Reliability of Contrastive, Masked, and Hybrid Self-Supervised ECG Models for Arrhythmia Classification under Noise, Lead Loss, and Dataset Shift</h3>
       <p class="research-card__meta">
         <span class="research-card__role">Lead Researcher</span>
       </p>
